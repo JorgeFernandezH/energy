@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{geometry}
+\usepackage{amssymb}
+\usepackage{wasysym}
+\usepackage{color}
+\usepackage[utf8]{inputenc}
+\usepackage{pdfpages}
+\usepackage{listings}
+\newgeometry{top=1 cm,bottom=2cm,left=0.5cm,right=0.5cm}
+\title{ }
+\date{}
+\author{}
+
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ %
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=single,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=Octave,                 % the language of the code
+  otherkeywords={*,...},           % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+  title=\lstname,                  % show the filename of files included with \lstinputlisting; also try caption instead of title
+  xleftmargin=0cm,
+}
+
+\title{}
+\date{}
+\author{}
+\begin{document}
+
+
+El espectro de $K_n$ consiste en $n-1$ con multiplicidad $1$ y $-1$ con multiplicidad $n-1$. Usando el teorema el espectro de $L(K_n)$ consiste en $-2$ con multiplicidad $\frac{n(n-3)}{2}$, $n-4$ con multiplicidad $n-1$ y $2n-4$ con multiplicidad $1$. Por lo que para $n\geq 4$ la energía de $L(K_n)$ es $n(n-3)+(n-4)(n-1)+2n-4=2n^2-6n=2n(n-3)$.\\
+
+La gráfica $L(K_n)$ es claramente transitiva pues todas las aristas de $K_n$ son iguales. Por lo tanto para $n\geq 4$ la energía en vértice es $\frac{4n(n-3)}{n(n-1)}=\frac{4(n-3)}{n-1}$, que se aproxima a $4$ de forma creciente.\\
+
+
+
+
+
+
+
+\end{document}

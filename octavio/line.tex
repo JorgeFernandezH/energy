@@ -1,0 +1,595 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{geometry}
+\usepackage{amssymb}
+\usepackage{wasysym}
+\usepackage{color}
+\usepackage[utf8]{inputenc}
+\usepackage{pdfpages}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{tikz}
+\newgeometry{top=1 cm,bottom=2cm,left=0.5cm,right=0.5cm}
+\title{ }
+\date{}
+\author{}
+
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ %
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=single,                    % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=Octave,                 % the language of the code
+  otherkeywords={*,...},           % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,                     % sets default tabsize to 2 spaces
+  title=\lstname,                  % show the filename of files included with \lstinputlisting; also try caption instead of title
+  xleftmargin=0cm,
+}
+
+\title{}
+\date{}
+\author{}
+\begin{document}
+
+\begin{multicols}{5}
+
+\vbox{
+\noindent 2 vertices \\\noindent total energy $2.000$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=yellow!50!red!60,draw,minimum size=1em,inner sep=3pt]}] (1) at (0,-1.2) {$\scriptstyle 1.000$};
+\node[style={circle,fill=yellow!50!red!60,draw,minimum size=1em,inner sep=3pt]}] (2) at (0,-2.4) {$\scriptstyle 1.000$};
+\path[draw,thick](1) edge node {} (2);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+\noindent 3 vertices \\\noindent total energy $2.828$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=yellow!80!red!36,draw,minimum size=1em,inner sep=3pt]}] (1) at (0,-1.2) {$\scriptstyle 0.707$};
+\node[style={circle,fill=yellow!9!red!92,draw,minimum size=1em,inner sep=3pt]}] (2) at (0,-2.4) {$\scriptstyle 1.414$};
+\node[style={circle,fill=yellow!80!red!36,draw,minimum size=1em,inner sep=3pt]}] (3) at (0,-3.6) {$\scriptstyle 0.707$};
+\path[draw,thick](1) edge node {} (2);
+\path[draw,thick](2) edge node {} (3);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+\noindent 4 vertices \\\noindent total energy $4.472$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=yellow!61!red!51,draw,minimum size=1em,inner sep=3pt]}] (1) at (0,-1.2) {$\scriptstyle 0.894$};
+\node[style={circle,fill=yellow!16!red!87,draw,minimum size=1em,inner sep=3pt]}] (2) at (0,-2.4) {$\scriptstyle 1.342$};
+\node[style={circle,fill=yellow!16!red!87,draw,minimum size=1em,inner sep=3pt]}] (3) at (0,-3.6) {$\scriptstyle 1.342$};
+\node[style={circle,fill=yellow!61!red!51,draw,minimum size=1em,inner sep=3pt]}] (4) at (0,-4.8) {$\scriptstyle 0.894$};
+\path[draw,thick](1) edge node {} (2);
+\path[draw,thick](2) edge node {} (3);
+\path[draw,thick](3) edge node {} (4);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+\noindent 5 vertices \\\noindent total energy $5.464$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=yellow!72!red!42,draw,minimum size=1em,inner sep=3pt]}] (1) at (0,-1.2) {$\scriptstyle 0.789$};
+\node[style={circle,fill=yellow!14!red!88,draw,minimum size=1em,inner sep=3pt]}] (2) at (0,-2.4) {$\scriptstyle 1.366$};
+\node[style={circle,fill=yellow!35!red!72,draw,minimum size=1em,inner sep=3pt]}] (3) at (0,-3.6) {$\scriptstyle 1.155$};
+\node[style={circle,fill=yellow!14!red!88,draw,minimum size=1em,inner sep=3pt]}] (4) at (0,-4.8) {$\scriptstyle 1.366$};
+\node[style={circle,fill=yellow!72!red!42,draw,minimum size=1em,inner sep=3pt]}] (5) at (0,-6.0) {$\scriptstyle 0.789$};
+\path[draw,thick](1) edge node {} (2);
+\path[draw,thick](2) edge node {} (3);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](4) edge node {} (5);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+\noindent 6 vertices \\\noindent total energy $6.988$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=yellow!63!red!49,draw,minimum size=1em,inner sep=3pt]}] (1) at (0,-1.2) {$\scriptstyle 0.871$};
+\node[style={circle,fill=yellow!15!red!88,draw,minimum size=1em,inner sep=3pt]}] (2) at (0,-2.4) {$\scriptstyle 1.355$};
+\node[style={circle,fill=yellow!24!red!80,draw,minimum size=1em,inner sep=3pt]}] (3) at (0,-3.6) {$\scriptstyle 1.268$};
+\node[style={circle,fill=yellow!24!red!80,draw,minimum size=1em,inner sep=3pt]}] (4) at (0,-4.8) {$\scriptstyle 1.268$};
+\node[style={circle,fill=yellow!15!red!88,draw,minimum size=1em,inner sep=3pt]}] (5) at (0,-6.0) {$\scriptstyle 1.355$};
+\node[style={circle,fill=yellow!63!red!49,draw,minimum size=1em,inner sep=3pt]}] (6) at (0,-7.2) {$\scriptstyle 0.871$};
+\path[draw,thick](1) edge node {} (2);
+\path[draw,thick](2) edge node {} (3);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+\noindent 7 vertices \\\noindent total energy $8.055$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=yellow!69!red!44,draw,minimum size=1em,inner sep=3pt]}] (1) at (0,-1.2) {$\scriptstyle 0.815$};
+\node[style={circle,fill=yellow!14!red!88,draw,minimum size=1em,inner sep=3pt]}] (2) at (0,-2.4) {$\scriptstyle 1.360$};
+\node[style={circle,fill=yellow!31!red!75,draw,minimum size=1em,inner sep=3pt]}] (3) at (0,-3.6) {$\scriptstyle 1.198$};
+\node[style={circle,fill=yellow!20!red!84,draw,minimum size=1em,inner sep=3pt]}] (4) at (0,-4.8) {$\scriptstyle 1.307$};
+\node[style={circle,fill=yellow!31!red!75,draw,minimum size=1em,inner sep=3pt]}] (5) at (0,-6.0) {$\scriptstyle 1.198$};
+\node[style={circle,fill=yellow!14!red!88,draw,minimum size=1em,inner sep=3pt]}] (6) at (0,-7.2) {$\scriptstyle 1.360$};
+\node[style={circle,fill=yellow!69!red!44,draw,minimum size=1em,inner sep=3pt]}] (7) at (0,-8.4) {$\scriptstyle 0.815$};
+\path[draw,thick](1) edge node {} (2);
+\path[draw,thick](2) edge node {} (3);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](5) edge node {} (6);
+\path[draw,thick](6) edge node {} (7);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+\noindent 8 vertices \\\noindent total energy $9.518$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=yellow!64!red!48,draw,minimum size=1em,inner sep=3pt]}] (1) at (0,-1.2) {$\scriptstyle 0.862$};
+\node[style={circle,fill=yellow!15!red!88,draw,minimum size=1em,inner sep=3pt]}] (2) at (0,-2.4) {$\scriptstyle 1.357$};
+\node[style={circle,fill=yellow!25!red!80,draw,minimum size=1em,inner sep=3pt]}] (3) at (0,-3.6) {$\scriptstyle 1.253$};
+\node[style={circle,fill=yellow!22!red!82,draw,minimum size=1em,inner sep=3pt]}] (4) at (0,-4.8) {$\scriptstyle 1.287$};
+\node[style={circle,fill=yellow!22!red!82,draw,minimum size=1em,inner sep=3pt]}] (5) at (0,-6.0) {$\scriptstyle 1.287$};
+\node[style={circle,fill=yellow!25!red!80,draw,minimum size=1em,inner sep=3pt]}] (6) at (0,-7.2) {$\scriptstyle 1.253$};
+\node[style={circle,fill=yellow!15!red!88,draw,minimum size=1em,inner sep=3pt]}] (7) at (0,-8.4) {$\scriptstyle 1.357$};
+\node[style={circle,fill=yellow!64!red!48,draw,minimum size=1em,inner sep=3pt]}] (8) at (0,-9.6) {$\scriptstyle 0.862$};
+\path[draw,thick](1) edge node {} (2);
+\path[draw,thick](2) edge node {} (3);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](5) edge node {} (6);
+\path[draw,thick](6) edge node {} (7);
+\path[draw,thick](7) edge node {} (8);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+\noindent 9 vertices \\\noindent total energy $10.628$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=yellow!68!red!45,draw,minimum size=1em,inner sep=3pt]}] (1) at (0,-1.2) {$\scriptstyle 0.828$};
+\node[style={circle,fill=yellow!15!red!88,draw,minimum size=1em,inner sep=3pt]}] (2) at (0,-2.4) {$\scriptstyle 1.359$};
+\node[style={circle,fill=yellow!29!red!76,draw,minimum size=1em,inner sep=3pt]}] (3) at (0,-3.6) {$\scriptstyle 1.214$};
+\node[style={circle,fill=yellow!21!red!83,draw,minimum size=1em,inner sep=3pt]}] (4) at (0,-4.8) {$\scriptstyle 1.298$};
+\node[style={circle,fill=yellow!27!red!78,draw,minimum size=1em,inner sep=3pt]}] (5) at (0,-6.0) {$\scriptstyle 1.231$};
+\node[style={circle,fill=yellow!21!red!83,draw,minimum size=1em,inner sep=3pt]}] (6) at (0,-7.2) {$\scriptstyle 1.298$};
+\node[style={circle,fill=yellow!29!red!76,draw,minimum size=1em,inner sep=3pt]}] (7) at (0,-8.4) {$\scriptstyle 1.214$};
+\node[style={circle,fill=yellow!15!red!88,draw,minimum size=1em,inner sep=3pt]}] (8) at (0,-9.6) {$\scriptstyle 1.359$};
+\node[style={circle,fill=yellow!68!red!45,draw,minimum size=1em,inner sep=3pt]}] (9) at (0,-10.8) {$\scriptstyle 0.828$};
+\path[draw,thick](1) edge node {} (2);
+\path[draw,thick](2) edge node {} (3);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](5) edge node {} (6);
+\path[draw,thick](6) edge node {} (7);
+\path[draw,thick](7) edge node {} (8);
+\path[draw,thick](8) edge node {} (9);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+\noindent 10 vertices \\\noindent total energy $12.053$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=yellow!65!red!48,draw,minimum size=1em,inner sep=3pt]}] (1) at (0,-1.2) {$\scriptstyle 0.858$};
+\node[style={circle,fill=yellow!15!red!88,draw,minimum size=1em,inner sep=3pt]}] (2) at (0,-2.4) {$\scriptstyle 1.358$};
+\node[style={circle,fill=yellow!26!red!79,draw,minimum size=1em,inner sep=3pt]}] (3) at (0,-3.6) {$\scriptstyle 1.247$};
+\node[style={circle,fill=yellow!21!red!83,draw,minimum size=1em,inner sep=3pt]}] (4) at (0,-4.8) {$\scriptstyle 1.291$};
+\node[style={circle,fill=yellow!23!red!81,draw,minimum size=1em,inner sep=3pt]}] (5) at (0,-6.0) {$\scriptstyle 1.274$};
+\node[style={circle,fill=yellow!23!red!81,draw,minimum size=1em,inner sep=3pt]}] (6) at (0,-7.2) {$\scriptstyle 1.274$};
+\node[style={circle,fill=yellow!21!red!83,draw,minimum size=1em,inner sep=3pt]}] (7) at (0,-8.4) {$\scriptstyle 1.291$};
+\node[style={circle,fill=yellow!26!red!79,draw,minimum size=1em,inner sep=3pt]}] (8) at (0,-9.6) {$\scriptstyle 1.247$};
+\node[style={circle,fill=yellow!15!red!88,draw,minimum size=1em,inner sep=3pt]}] (9) at (0,-10.8) {$\scriptstyle 1.358$};
+\node[style={circle,fill=yellow!65!red!48,draw,minimum size=1em,inner sep=3pt]}] (10) at (0,-12.0) {$\scriptstyle 0.858$};
+\path[draw,thick](1) edge node {} (2);
+\path[draw,thick](2) edge node {} (3);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](5) edge node {} (6);
+\path[draw,thick](6) edge node {} (7);
+\path[draw,thick](7) edge node {} (8);
+\path[draw,thick](8) edge node {} (9);
+\path[draw,thick](9) edge node {} (10);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+\noindent 11 vertices \\\noindent total energy $13.192$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=yellow!67!red!46,draw,minimum size=1em,inner sep=3pt]}] (1) at (0,-1.2) {$\scriptstyle 0.834$};
+\node[style={circle,fill=yellow!15!red!88,draw,minimum size=1em,inner sep=3pt]}] (2) at (0,-2.4) {$\scriptstyle 1.359$};
+\node[style={circle,fill=yellow!28!red!77,draw,minimum size=1em,inner sep=3pt]}] (3) at (0,-3.6) {$\scriptstyle 1.221$};
+\node[style={circle,fill=yellow!21!red!83,draw,minimum size=1em,inner sep=3pt]}] (4) at (0,-4.8) {$\scriptstyle 1.295$};
+\node[style={circle,fill=yellow!26!red!79,draw,minimum size=1em,inner sep=3pt]}] (5) at (0,-6.0) {$\scriptstyle 1.242$};
+\node[style={circle,fill=yellow!22!red!82,draw,minimum size=1em,inner sep=3pt]}] (6) at (0,-7.2) {$\scriptstyle 1.288$};
+\node[style={circle,fill=yellow!26!red!79,draw,minimum size=1em,inner sep=3pt]}] (7) at (0,-8.4) {$\scriptstyle 1.242$};
+\node[style={circle,fill=yellow!21!red!83,draw,minimum size=1em,inner sep=3pt]}] (8) at (0,-9.6) {$\scriptstyle 1.295$};
+\node[style={circle,fill=yellow!28!red!77,draw,minimum size=1em,inner sep=3pt]}] (9) at (0,-10.8) {$\scriptstyle 1.221$};
+\node[style={circle,fill=yellow!15!red!88,draw,minimum size=1em,inner sep=3pt]}] (10) at (0,-12.0) {$\scriptstyle 1.359$};
+\node[style={circle,fill=yellow!67!red!46,draw,minimum size=1em,inner sep=3pt]}] (11) at (0,-13.2) {$\scriptstyle 0.834$};
+\path[draw,thick](1) edge node {} (2);
+\path[draw,thick](2) edge node {} (3);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](5) edge node {} (6);
+\path[draw,thick](6) edge node {} (7);
+\path[draw,thick](7) edge node {} (8);
+\path[draw,thick](8) edge node {} (9);
+\path[draw,thick](9) edge node {} (10);
+\path[draw,thick](10) edge node {} (11);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+\noindent 12 vertices \\\noindent total energy $14.592$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=yellow!65!red!48,draw,minimum size=1em,inner sep=3pt]}] (1) at (0,-1.2) {$\scriptstyle 0.855$};
+\node[style={circle,fill=yellow!15!red!88,draw,minimum size=1em,inner sep=3pt]}] (2) at (0,-2.4) {$\scriptstyle 1.358$};
+\node[style={circle,fill=yellow!26!red!79,draw,minimum size=1em,inner sep=3pt]}] (3) at (0,-3.6) {$\scriptstyle 1.244$};
+\node[style={circle,fill=yellow!21!red!83,draw,minimum size=1em,inner sep=3pt]}] (4) at (0,-4.8) {$\scriptstyle 1.292$};
+\node[style={circle,fill=yellow!24!red!80,draw,minimum size=1em,inner sep=3pt]}] (5) at (0,-6.0) {$\scriptstyle 1.269$};
+\node[style={circle,fill=yellow!23!red!81,draw,minimum size=1em,inner sep=3pt]}] (6) at (0,-7.2) {$\scriptstyle 1.279$};
+\node[style={circle,fill=yellow!23!red!81,draw,minimum size=1em,inner sep=3pt]}] (7) at (0,-8.4) {$\scriptstyle 1.279$};
+\node[style={circle,fill=yellow!24!red!80,draw,minimum size=1em,inner sep=3pt]}] (8) at (0,-9.6) {$\scriptstyle 1.269$};
+\node[style={circle,fill=yellow!21!red!83,draw,minimum size=1em,inner sep=3pt]}] (9) at (0,-10.8) {$\scriptstyle 1.292$};
+\node[style={circle,fill=yellow!26!red!79,draw,minimum size=1em,inner sep=3pt]}] (10) at (0,-12.0) {$\scriptstyle 1.244$};
+\node[style={circle,fill=yellow!15!red!88,draw,minimum size=1em,inner sep=3pt]}] (11) at (0,-13.2) {$\scriptstyle 1.358$};
+\node[style={circle,fill=yellow!65!red!48,draw,minimum size=1em,inner sep=3pt]}] (12) at (0,-14.4) {$\scriptstyle 0.855$};
+\path[draw,thick](1) edge node {} (2);
+\path[draw,thick](2) edge node {} (3);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](5) edge node {} (6);
+\path[draw,thick](6) edge node {} (7);
+\path[draw,thick](7) edge node {} (8);
+\path[draw,thick](8) edge node {} (9);
+\path[draw,thick](9) edge node {} (10);
+\path[draw,thick](10) edge node {} (11);
+\path[draw,thick](11) edge node {} (12);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+\noindent 13 vertices \\\noindent total energy $15.750$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=yellow!67!red!46,draw,minimum size=1em,inner sep=3pt]}] (1) at (0,-1.2) {$\scriptstyle 0.838$};
+\node[style={circle,fill=yellow!15!red!88,draw,minimum size=1em,inner sep=3pt]}] (2) at (0,-2.4) {$\scriptstyle 1.358$};
+\node[style={circle,fill=yellow!28!red!77,draw,minimum size=1em,inner sep=3pt]}] (3) at (0,-3.6) {$\scriptstyle 1.226$};
+\node[style={circle,fill=yellow!21!red!83,draw,minimum size=1em,inner sep=3pt]}] (4) at (0,-4.8) {$\scriptstyle 1.294$};
+\node[style={circle,fill=yellow!26!red!79,draw,minimum size=1em,inner sep=3pt]}] (5) at (0,-6.0) {$\scriptstyle 1.248$};
+\node[style={circle,fill=yellow!22!red!82,draw,minimum size=1em,inner sep=3pt]}] (6) at (0,-7.2) {$\scriptstyle 1.285$};
+\node[style={circle,fill=yellow!25!red!80,draw,minimum size=1em,inner sep=3pt]}] (7) at (0,-8.4) {$\scriptstyle 1.252$};
+\node[style={circle,fill=yellow!22!red!82,draw,minimum size=1em,inner sep=3pt]}] (8) at (0,-9.6) {$\scriptstyle 1.285$};
+\node[style={circle,fill=yellow!26!red!79,draw,minimum size=1em,inner sep=3pt]}] (9) at (0,-10.8) {$\scriptstyle 1.248$};
+\node[style={circle,fill=yellow!21!red!83,draw,minimum size=1em,inner sep=3pt]}] (10) at (0,-12.0) {$\scriptstyle 1.294$};
+\node[style={circle,fill=yellow!28!red!77,draw,minimum size=1em,inner sep=3pt]}] (11) at (0,-13.2) {$\scriptstyle 1.226$};
+\node[style={circle,fill=yellow!15!red!88,draw,minimum size=1em,inner sep=3pt]}] (12) at (0,-14.4) {$\scriptstyle 1.358$};
+\node[style={circle,fill=yellow!67!red!46,draw,minimum size=1em,inner sep=3pt]}] (13) at (0,-15.6) {$\scriptstyle 0.838$};
+\path[draw,thick](1) edge node {} (2);
+\path[draw,thick](2) edge node {} (3);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](5) edge node {} (6);
+\path[draw,thick](6) edge node {} (7);
+\path[draw,thick](7) edge node {} (8);
+\path[draw,thick](8) edge node {} (9);
+\path[draw,thick](9) edge node {} (10);
+\path[draw,thick](10) edge node {} (11);
+\path[draw,thick](11) edge node {} (12);
+\path[draw,thick](12) edge node {} (13);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+\noindent 14 vertices \\\noindent total energy $17.134$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=yellow!65!red!48,draw,minimum size=1em,inner sep=3pt]}] (1) at (0,-1.2) {$\scriptstyle 0.854$};
+\node[style={circle,fill=yellow!15!red!88,draw,minimum size=1em,inner sep=3pt]}] (2) at (0,-2.4) {$\scriptstyle 1.358$};
+\node[style={circle,fill=yellow!26!red!79,draw,minimum size=1em,inner sep=3pt]}] (3) at (0,-3.6) {$\scriptstyle 1.242$};
+\node[style={circle,fill=yellow!21!red!83,draw,minimum size=1em,inner sep=3pt]}] (4) at (0,-4.8) {$\scriptstyle 1.293$};
+\node[style={circle,fill=yellow!24!red!80,draw,minimum size=1em,inner sep=3pt]}] (5) at (0,-6.0) {$\scriptstyle 1.266$};
+\node[style={circle,fill=yellow!22!red!82,draw,minimum size=1em,inner sep=3pt]}] (6) at (0,-7.2) {$\scriptstyle 1.280$};
+\node[style={circle,fill=yellow!23!red!81,draw,minimum size=1em,inner sep=3pt]}] (7) at (0,-8.4) {$\scriptstyle 1.274$};
+\node[style={circle,fill=yellow!23!red!81,draw,minimum size=1em,inner sep=3pt]}] (8) at (0,-9.6) {$\scriptstyle 1.274$};
+\node[style={circle,fill=yellow!22!red!82,draw,minimum size=1em,inner sep=3pt]}] (9) at (0,-10.8) {$\scriptstyle 1.280$};
+\node[style={circle,fill=yellow!24!red!80,draw,minimum size=1em,inner sep=3pt]}] (10) at (0,-12.0) {$\scriptstyle 1.266$};
+\node[style={circle,fill=yellow!21!red!83,draw,minimum size=1em,inner sep=3pt]}] (11) at (0,-13.2) {$\scriptstyle 1.293$};
+\node[style={circle,fill=yellow!26!red!79,draw,minimum size=1em,inner sep=3pt]}] (12) at (0,-14.4) {$\scriptstyle 1.242$};
+\node[style={circle,fill=yellow!15!red!88,draw,minimum size=1em,inner sep=3pt]}] (13) at (0,-15.6) {$\scriptstyle 1.358$};
+\node[style={circle,fill=yellow!65!red!48,draw,minimum size=1em,inner sep=3pt]}] (14) at (0,-16.8) {$\scriptstyle 0.854$};
+\path[draw,thick](1) edge node {} (2);
+\path[draw,thick](2) edge node {} (3);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](5) edge node {} (6);
+\path[draw,thick](6) edge node {} (7);
+\path[draw,thick](7) edge node {} (8);
+\path[draw,thick](8) edge node {} (9);
+\path[draw,thick](9) edge node {} (10);
+\path[draw,thick](10) edge node {} (11);
+\path[draw,thick](11) edge node {} (12);
+\path[draw,thick](12) edge node {} (13);
+\path[draw,thick](13) edge node {} (14);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+\noindent 15 vertices \\\noindent total energy $18.306$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=yellow!66!red!47,draw,minimum size=1em,inner sep=3pt]}] (1) at (0,-1.2) {$\scriptstyle 0.841$};
+\node[style={circle,fill=yellow!15!red!88,draw,minimum size=1em,inner sep=3pt]}] (2) at (0,-2.4) {$\scriptstyle 1.358$};
+\node[style={circle,fill=yellow!28!red!77,draw,minimum size=1em,inner sep=3pt]}] (3) at (0,-3.6) {$\scriptstyle 1.228$};
+\node[style={circle,fill=yellow!21!red!83,draw,minimum size=1em,inner sep=3pt]}] (4) at (0,-4.8) {$\scriptstyle 1.294$};
+\node[style={circle,fill=yellow!25!red!80,draw,minimum size=1em,inner sep=3pt]}] (5) at (0,-6.0) {$\scriptstyle 1.251$};
+\node[style={circle,fill=yellow!22!red!82,draw,minimum size=1em,inner sep=3pt]}] (6) at (0,-7.2) {$\scriptstyle 1.284$};
+\node[style={circle,fill=yellow!25!red!80,draw,minimum size=1em,inner sep=3pt]}] (7) at (0,-8.4) {$\scriptstyle 1.256$};
+\node[style={circle,fill=yellow!22!red!82,draw,minimum size=1em,inner sep=3pt]}] (8) at (0,-9.6) {$\scriptstyle 1.281$};
+\node[style={circle,fill=yellow!25!red!80,draw,minimum size=1em,inner sep=3pt]}] (9) at (0,-10.8) {$\scriptstyle 1.256$};
+\node[style={circle,fill=yellow!22!red!82,draw,minimum size=1em,inner sep=3pt]}] (10) at (0,-12.0) {$\scriptstyle 1.284$};
+\node[style={circle,fill=yellow!25!red!80,draw,minimum size=1em,inner sep=3pt]}] (11) at (0,-13.2) {$\scriptstyle 1.251$};
+\node[style={circle,fill=yellow!21!red!83,draw,minimum size=1em,inner sep=3pt]}] (12) at (0,-14.4) {$\scriptstyle 1.294$};
+\node[style={circle,fill=yellow!28!red!77,draw,minimum size=1em,inner sep=3pt]}] (13) at (0,-15.6) {$\scriptstyle 1.228$};
+\node[style={circle,fill=yellow!15!red!88,draw,minimum size=1em,inner sep=3pt]}] (14) at (0,-16.8) {$\scriptstyle 1.358$};
+\node[style={circle,fill=yellow!66!red!47,draw,minimum size=1em,inner sep=3pt]}] (15) at (0,-18.0) {$\scriptstyle 0.841$};
+\path[draw,thick](1) edge node {} (2);
+\path[draw,thick](2) edge node {} (3);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](5) edge node {} (6);
+\path[draw,thick](6) edge node {} (7);
+\path[draw,thick](7) edge node {} (8);
+\path[draw,thick](8) edge node {} (9);
+\path[draw,thick](9) edge node {} (10);
+\path[draw,thick](10) edge node {} (11);
+\path[draw,thick](11) edge node {} (12);
+\path[draw,thick](12) edge node {} (13);
+\path[draw,thick](13) edge node {} (14);
+\path[draw,thick](14) edge node {} (15);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+\noindent 16 vertices \\\noindent total energy $19.676$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=yellow!65!red!48,draw,minimum size=1em,inner sep=3pt]}] (1) at (0,-1.2) {$\scriptstyle 0.852$};
+\node[style={circle,fill=yellow!15!red!88,draw,minimum size=1em,inner sep=3pt]}] (2) at (0,-2.4) {$\scriptstyle 1.358$};
+\node[style={circle,fill=yellow!26!red!79,draw,minimum size=1em,inner sep=3pt]}] (3) at (0,-3.6) {$\scriptstyle 1.241$};
+\node[style={circle,fill=yellow!21!red!83,draw,minimum size=1em,inner sep=3pt]}] (4) at (0,-4.8) {$\scriptstyle 1.293$};
+\node[style={circle,fill=yellow!24!red!80,draw,minimum size=1em,inner sep=3pt]}] (5) at (0,-6.0) {$\scriptstyle 1.265$};
+\node[style={circle,fill=yellow!22!red!82,draw,minimum size=1em,inner sep=3pt]}] (6) at (0,-7.2) {$\scriptstyle 1.281$};
+\node[style={circle,fill=yellow!23!red!81,draw,minimum size=1em,inner sep=3pt]}] (7) at (0,-8.4) {$\scriptstyle 1.272$};
+\node[style={circle,fill=yellow!23!red!81,draw,minimum size=1em,inner sep=3pt]}] (8) at (0,-9.6) {$\scriptstyle 1.276$};
+\node[style={circle,fill=yellow!23!red!81,draw,minimum size=1em,inner sep=3pt]}] (9) at (0,-10.8) {$\scriptstyle 1.276$};
+\node[style={circle,fill=yellow!23!red!81,draw,minimum size=1em,inner sep=3pt]}] (10) at (0,-12.0) {$\scriptstyle 1.272$};
+\node[style={circle,fill=yellow!22!red!82,draw,minimum size=1em,inner sep=3pt]}] (11) at (0,-13.2) {$\scriptstyle 1.281$};
+\node[style={circle,fill=yellow!24!red!80,draw,minimum size=1em,inner sep=3pt]}] (12) at (0,-14.4) {$\scriptstyle 1.265$};
+\node[style={circle,fill=yellow!21!red!83,draw,minimum size=1em,inner sep=3pt]}] (13) at (0,-15.6) {$\scriptstyle 1.293$};
+\node[style={circle,fill=yellow!26!red!79,draw,minimum size=1em,inner sep=3pt]}] (14) at (0,-16.8) {$\scriptstyle 1.241$};
+\node[style={circle,fill=yellow!15!red!88,draw,minimum size=1em,inner sep=3pt]}] (15) at (0,-18.0) {$\scriptstyle 1.358$};
+\node[style={circle,fill=yellow!65!red!48,draw,minimum size=1em,inner sep=3pt]}] (16) at (0,-19.2) {$\scriptstyle 0.852$};
+\path[draw,thick](1) edge node {} (2);
+\path[draw,thick](2) edge node {} (3);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](5) edge node {} (6);
+\path[draw,thick](6) edge node {} (7);
+\path[draw,thick](7) edge node {} (8);
+\path[draw,thick](8) edge node {} (9);
+\path[draw,thick](9) edge node {} (10);
+\path[draw,thick](10) edge node {} (11);
+\path[draw,thick](11) edge node {} (12);
+\path[draw,thick](12) edge node {} (13);
+\path[draw,thick](13) edge node {} (14);
+\path[draw,thick](14) edge node {} (15);
+\path[draw,thick](15) edge node {} (16);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+\noindent 17 vertices \\\noindent total energy $20.860$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=yellow!66!red!47,draw,minimum size=1em,inner sep=3pt]}] (1) at (0,-1.2) {$\scriptstyle 0.842$};
+\node[style={circle,fill=yellow!15!red!88,draw,minimum size=1em,inner sep=3pt]}] (2) at (0,-2.4) {$\scriptstyle 1.358$};
+\node[style={circle,fill=yellow!27!red!78,draw,minimum size=1em,inner sep=3pt]}] (3) at (0,-3.6) {$\scriptstyle 1.230$};
+\node[style={circle,fill=yellow!21!red!83,draw,minimum size=1em,inner sep=3pt]}] (4) at (0,-4.8) {$\scriptstyle 1.294$};
+\node[style={circle,fill=yellow!25!red!80,draw,minimum size=1em,inner sep=3pt]}] (5) at (0,-6.0) {$\scriptstyle 1.253$};
+\node[style={circle,fill=yellow!22!red!82,draw,minimum size=1em,inner sep=3pt]}] (6) at (0,-7.2) {$\scriptstyle 1.283$};
+\node[style={circle,fill=yellow!25!red!80,draw,minimum size=1em,inner sep=3pt]}] (7) at (0,-8.4) {$\scriptstyle 1.259$};
+\node[style={circle,fill=yellow!22!red!82,draw,minimum size=1em,inner sep=3pt]}] (8) at (0,-9.6) {$\scriptstyle 1.280$};
+\node[style={circle,fill=yellow!24!red!80,draw,minimum size=1em,inner sep=3pt]}] (9) at (0,-10.8) {$\scriptstyle 1.260$};
+\node[style={circle,fill=yellow!22!red!82,draw,minimum size=1em,inner sep=3pt]}] (10) at (0,-12.0) {$\scriptstyle 1.280$};
+\node[style={circle,fill=yellow!25!red!80,draw,minimum size=1em,inner sep=3pt]}] (11) at (0,-13.2) {$\scriptstyle 1.259$};
+\node[style={circle,fill=yellow!22!red!82,draw,minimum size=1em,inner sep=3pt]}] (12) at (0,-14.4) {$\scriptstyle 1.283$};
+\node[style={circle,fill=yellow!25!red!80,draw,minimum size=1em,inner sep=3pt]}] (13) at (0,-15.6) {$\scriptstyle 1.253$};
+\node[style={circle,fill=yellow!21!red!83,draw,minimum size=1em,inner sep=3pt]}] (14) at (0,-16.8) {$\scriptstyle 1.294$};
+\node[style={circle,fill=yellow!27!red!78,draw,minimum size=1em,inner sep=3pt]}] (15) at (0,-18.0) {$\scriptstyle 1.230$};
+\node[style={circle,fill=yellow!15!red!88,draw,minimum size=1em,inner sep=3pt]}] (16) at (0,-19.2) {$\scriptstyle 1.358$};
+\node[style={circle,fill=yellow!66!red!47,draw,minimum size=1em,inner sep=3pt]}] (17) at (0,-20.4) {$\scriptstyle 0.842$};
+\path[draw,thick](1) edge node {} (2);
+\path[draw,thick](2) edge node {} (3);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](5) edge node {} (6);
+\path[draw,thick](6) edge node {} (7);
+\path[draw,thick](7) edge node {} (8);
+\path[draw,thick](8) edge node {} (9);
+\path[draw,thick](9) edge node {} (10);
+\path[draw,thick](10) edge node {} (11);
+\path[draw,thick](11) edge node {} (12);
+\path[draw,thick](12) edge node {} (13);
+\path[draw,thick](13) edge node {} (14);
+\path[draw,thick](14) edge node {} (15);
+\path[draw,thick](15) edge node {} (16);
+\path[draw,thick](16) edge node {} (17);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+\noindent 18 vertices \\\noindent total energy $22.219$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=yellow!65!red!48,draw,minimum size=1em,inner sep=3pt]}] (1) at (0,-1.2) {$\scriptstyle 0.852$};
+\node[style={circle,fill=yellow!15!red!88,draw,minimum size=1em,inner sep=3pt]}] (2) at (0,-2.4) {$\scriptstyle 1.358$};
+\node[style={circle,fill=yellow!27!red!78,draw,minimum size=1em,inner sep=3pt]}] (3) at (0,-3.6) {$\scriptstyle 1.240$};
+\node[style={circle,fill=yellow!21!red!83,draw,minimum size=1em,inner sep=3pt]}] (4) at (0,-4.8) {$\scriptstyle 1.293$};
+\node[style={circle,fill=yellow!24!red!80,draw,minimum size=1em,inner sep=3pt]}] (5) at (0,-6.0) {$\scriptstyle 1.264$};
+\node[style={circle,fill=yellow!22!red!82,draw,minimum size=1em,inner sep=3pt]}] (6) at (0,-7.2) {$\scriptstyle 1.282$};
+\node[style={circle,fill=yellow!23!red!81,draw,minimum size=1em,inner sep=3pt]}] (7) at (0,-8.4) {$\scriptstyle 1.270$};
+\node[style={circle,fill=yellow!23!red!81,draw,minimum size=1em,inner sep=3pt]}] (8) at (0,-9.6) {$\scriptstyle 1.277$};
+\node[style={circle,fill=yellow!23!red!81,draw,minimum size=1em,inner sep=3pt]}] (9) at (0,-10.8) {$\scriptstyle 1.274$};
+\node[style={circle,fill=yellow!23!red!81,draw,minimum size=1em,inner sep=3pt]}] (10) at (0,-12.0) {$\scriptstyle 1.274$};
+\node[style={circle,fill=yellow!23!red!81,draw,minimum size=1em,inner sep=3pt]}] (11) at (0,-13.2) {$\scriptstyle 1.277$};
+\node[style={circle,fill=yellow!23!red!81,draw,minimum size=1em,inner sep=3pt]}] (12) at (0,-14.4) {$\scriptstyle 1.270$};
+\node[style={circle,fill=yellow!22!red!82,draw,minimum size=1em,inner sep=3pt]}] (13) at (0,-15.6) {$\scriptstyle 1.282$};
+\node[style={circle,fill=yellow!24!red!80,draw,minimum size=1em,inner sep=3pt]}] (14) at (0,-16.8) {$\scriptstyle 1.264$};
+\node[style={circle,fill=yellow!21!red!83,draw,minimum size=1em,inner sep=3pt]}] (15) at (0,-18.0) {$\scriptstyle 1.293$};
+\node[style={circle,fill=yellow!27!red!78,draw,minimum size=1em,inner sep=3pt]}] (16) at (0,-19.2) {$\scriptstyle 1.240$};
+\node[style={circle,fill=yellow!15!red!88,draw,minimum size=1em,inner sep=3pt]}] (17) at (0,-20.4) {$\scriptstyle 1.358$};
+\node[style={circle,fill=yellow!65!red!48,draw,minimum size=1em,inner sep=3pt]}] (18) at (0,-21.6) {$\scriptstyle 0.852$};
+\path[draw,thick](1) edge node {} (2);
+\path[draw,thick](2) edge node {} (3);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](5) edge node {} (6);
+\path[draw,thick](6) edge node {} (7);
+\path[draw,thick](7) edge node {} (8);
+\path[draw,thick](8) edge node {} (9);
+\path[draw,thick](9) edge node {} (10);
+\path[draw,thick](10) edge node {} (11);
+\path[draw,thick](11) edge node {} (12);
+\path[draw,thick](12) edge node {} (13);
+\path[draw,thick](13) edge node {} (14);
+\path[draw,thick](14) edge node {} (15);
+\path[draw,thick](15) edge node {} (16);
+\path[draw,thick](16) edge node {} (17);
+\path[draw,thick](17) edge node {} (18);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+\noindent 19 vertices \\\noindent total energy $23.412$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=yellow!66!red!47,draw,minimum size=1em,inner sep=3pt]}] (1) at (0,-1.2) {$\scriptstyle 0.844$};
+\node[style={circle,fill=yellow!15!red!88,draw,minimum size=1em,inner sep=3pt]}] (2) at (0,-2.4) {$\scriptstyle 1.358$};
+\node[style={circle,fill=yellow!27!red!78,draw,minimum size=1em,inner sep=3pt]}] (3) at (0,-3.6) {$\scriptstyle 1.232$};
+\node[style={circle,fill=yellow!21!red!83,draw,minimum size=1em,inner sep=3pt]}] (4) at (0,-4.8) {$\scriptstyle 1.294$};
+\node[style={circle,fill=yellow!25!red!80,draw,minimum size=1em,inner sep=3pt]}] (5) at (0,-6.0) {$\scriptstyle 1.255$};
+\node[style={circle,fill=yellow!22!red!82,draw,minimum size=1em,inner sep=3pt]}] (6) at (0,-7.2) {$\scriptstyle 1.283$};
+\node[style={circle,fill=yellow!24!red!80,draw,minimum size=1em,inner sep=3pt]}] (7) at (0,-8.4) {$\scriptstyle 1.261$};
+\node[style={circle,fill=yellow!23!red!81,draw,minimum size=1em,inner sep=3pt]}] (8) at (0,-9.6) {$\scriptstyle 1.279$};
+\node[style={circle,fill=yellow!24!red!80,draw,minimum size=1em,inner sep=3pt]}] (9) at (0,-10.8) {$\scriptstyle 1.263$};
+\node[style={circle,fill=yellow!23!red!81,draw,minimum size=1em,inner sep=3pt]}] (10) at (0,-12.0) {$\scriptstyle 1.278$};
+\node[style={circle,fill=yellow!24!red!80,draw,minimum size=1em,inner sep=3pt]}] (11) at (0,-13.2) {$\scriptstyle 1.263$};
+\node[style={circle,fill=yellow!23!red!81,draw,minimum size=1em,inner sep=3pt]}] (12) at (0,-14.4) {$\scriptstyle 1.279$};
+\node[style={circle,fill=yellow!24!red!80,draw,minimum size=1em,inner sep=3pt]}] (13) at (0,-15.6) {$\scriptstyle 1.261$};
+\node[style={circle,fill=yellow!22!red!82,draw,minimum size=1em,inner sep=3pt]}] (14) at (0,-16.8) {$\scriptstyle 1.283$};
+\node[style={circle,fill=yellow!25!red!80,draw,minimum size=1em,inner sep=3pt]}] (15) at (0,-18.0) {$\scriptstyle 1.255$};
+\node[style={circle,fill=yellow!21!red!83,draw,minimum size=1em,inner sep=3pt]}] (16) at (0,-19.2) {$\scriptstyle 1.294$};
+\node[style={circle,fill=yellow!27!red!78,draw,minimum size=1em,inner sep=3pt]}] (17) at (0,-20.4) {$\scriptstyle 1.232$};
+\node[style={circle,fill=yellow!15!red!88,draw,minimum size=1em,inner sep=3pt]}] (18) at (0,-21.6) {$\scriptstyle 1.358$};
+\node[style={circle,fill=yellow!66!red!47,draw,minimum size=1em,inner sep=3pt]}] (19) at (0,-22.8) {$\scriptstyle 0.844$};
+\path[draw,thick](1) edge node {} (2);
+\path[draw,thick](2) edge node {} (3);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](5) edge node {} (6);
+\path[draw,thick](6) edge node {} (7);
+\path[draw,thick](7) edge node {} (8);
+\path[draw,thick](8) edge node {} (9);
+\path[draw,thick](9) edge node {} (10);
+\path[draw,thick](10) edge node {} (11);
+\path[draw,thick](11) edge node {} (12);
+\path[draw,thick](12) edge node {} (13);
+\path[draw,thick](13) edge node {} (14);
+\path[draw,thick](14) edge node {} (15);
+\path[draw,thick](15) edge node {} (16);
+\path[draw,thick](16) edge node {} (17);
+\path[draw,thick](17) edge node {} (18);
+\path[draw,thick](18) edge node {} (19);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+\noindent 20 vertices \\\noindent total energy $24.763$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=yellow!65!red!48,draw,minimum size=1em,inner sep=3pt]}] (1) at (0,-1.2) {$\scriptstyle 0.851$};
+\node[style={circle,fill=yellow!15!red!88,draw,minimum size=1em,inner sep=3pt]}] (2) at (0,-2.4) {$\scriptstyle 1.358$};
+\node[style={circle,fill=yellow!27!red!78,draw,minimum size=1em,inner sep=3pt]}] (3) at (0,-3.6) {$\scriptstyle 1.239$};
+\node[style={circle,fill=yellow!21!red!83,draw,minimum size=1em,inner sep=3pt]}] (4) at (0,-4.8) {$\scriptstyle 1.293$};
+\node[style={circle,fill=yellow!24!red!80,draw,minimum size=1em,inner sep=3pt]}] (5) at (0,-6.0) {$\scriptstyle 1.263$};
+\node[style={circle,fill=yellow!22!red!82,draw,minimum size=1em,inner sep=3pt]}] (6) at (0,-7.2) {$\scriptstyle 1.282$};
+\node[style={circle,fill=yellow!24!red!80,draw,minimum size=1em,inner sep=3pt]}] (7) at (0,-8.4) {$\scriptstyle 1.270$};
+\node[style={circle,fill=yellow!23!red!81,draw,minimum size=1em,inner sep=3pt]}] (8) at (0,-9.6) {$\scriptstyle 1.277$};
+\node[style={circle,fill=yellow!23!red!81,draw,minimum size=1em,inner sep=3pt]}] (9) at (0,-10.8) {$\scriptstyle 1.273$};
+\node[style={circle,fill=yellow!23!red!81,draw,minimum size=1em,inner sep=3pt]}] (10) at (0,-12.0) {$\scriptstyle 1.275$};
+\node[style={circle,fill=yellow!23!red!81,draw,minimum size=1em,inner sep=3pt]}] (11) at (0,-13.2) {$\scriptstyle 1.275$};
+\node[style={circle,fill=yellow!23!red!81,draw,minimum size=1em,inner sep=3pt]}] (12) at (0,-14.4) {$\scriptstyle 1.273$};
+\node[style={circle,fill=yellow!23!red!81,draw,minimum size=1em,inner sep=3pt]}] (13) at (0,-15.6) {$\scriptstyle 1.277$};
+\node[style={circle,fill=yellow!24!red!80,draw,minimum size=1em,inner sep=3pt]}] (14) at (0,-16.8) {$\scriptstyle 1.270$};
+\node[style={circle,fill=yellow!22!red!82,draw,minimum size=1em,inner sep=3pt]}] (15) at (0,-18.0) {$\scriptstyle 1.282$};
+\node[style={circle,fill=yellow!24!red!80,draw,minimum size=1em,inner sep=3pt]}] (16) at (0,-19.2) {$\scriptstyle 1.263$};
+\node[style={circle,fill=yellow!21!red!83,draw,minimum size=1em,inner sep=3pt]}] (17) at (0,-20.4) {$\scriptstyle 1.293$};
+\node[style={circle,fill=yellow!27!red!78,draw,minimum size=1em,inner sep=3pt]}] (18) at (0,-21.6) {$\scriptstyle 1.239$};
+\node[style={circle,fill=yellow!15!red!88,draw,minimum size=1em,inner sep=3pt]}] (19) at (0,-22.8) {$\scriptstyle 1.358$};
+\node[style={circle,fill=yellow!65!red!48,draw,minimum size=1em,inner sep=3pt]}] (20) at (0,-24.0) {$\scriptstyle 0.851$};
+\path[draw,thick](1) edge node {} (2);
+\path[draw,thick](2) edge node {} (3);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](5) edge node {} (6);
+\path[draw,thick](6) edge node {} (7);
+\path[draw,thick](7) edge node {} (8);
+\path[draw,thick](8) edge node {} (9);
+\path[draw,thick](9) edge node {} (10);
+\path[draw,thick](10) edge node {} (11);
+\path[draw,thick](11) edge node {} (12);
+\path[draw,thick](12) edge node {} (13);
+\path[draw,thick](13) edge node {} (14);
+\path[draw,thick](14) edge node {} (15);
+\path[draw,thick](15) edge node {} (16);
+\path[draw,thick](16) edge node {} (17);
+\path[draw,thick](17) edge node {} (18);
+\path[draw,thick](18) edge node {} (19);
+\path[draw,thick](19) edge node {} (20);
+\end{tikzpicture}
+\\}
+
+
+
+
+
+\end{multicols}
+\end{document}

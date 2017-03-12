@@ -1,0 +1,2735 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{geometry}
+\usepackage{amssymb}
+\usepackage{wasysym}
+\usepackage{color}
+\usepackage[utf8]{inputenc}
+\usepackage{pdfpages}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{tikz}
+\newgeometry{top=1 cm,bottom=2cm,left=0.5cm,right=0.5cm}
+\title{ }
+\date{}
+\author{}
+
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ %
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=single,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=Octave,                 % the language of the code
+  otherkeywords={*,...},           % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+  title=\lstname,                  % show the filename of files included with \lstinputlisting; also try caption instead of title
+  xleftmargin=0cm,
+}
+
+\title{}
+\date{}
+\author{}
+\begin{document}
+
+\section{vertex}
+\begin{multicols}{4}
+
+
+
+
+\end{multicols}
+
+\section{vertices}
+\begin{multicols}{4}
+
+
+
+
+\end{multicols}
+
+\section{vertices}
+\begin{multicols}{4}
+
+
+
+\end{multicols}
+
+\section{vertices}
+
+\begin{multicols}{4}
+
+
+
+
+\end{multicols}
+
+\section{vertices}
+
+\begin{multicols}{4}
+
+\end{multicols}
+
+
+\section{vertices}
+
+\begin{multicols}{4}
+
+\vbox{
+Graph 1, order 6.\
+
+Total energy: $4.472$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!82!red!18,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$0.447$};
+\node[style={circle,fill=blue!82!red!18,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.447$};
+\node[style={circle,fill=blue!82!red!18,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.447$};
+\node[style={circle,fill=blue!82!red!18,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$0.447$};
+\node[style={circle,fill=blue!82!red!18,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$0.447$};
+\node[style={circle,fill=blue!9!red!91,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$2.236$};
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 2, order 6.\
+
+Total energy: $5.819$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.283$};
+\node[style={circle,fill=blue!78!red!22,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.542$};
+\node[style={circle,fill=blue!78!red!22,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.542$};
+\node[style={circle,fill=blue!78!red!22,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$0.542$};
+\node[style={circle,fill=blue!62!red!38,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$0.939$};
+\node[style={circle,fill=blue!20!red!80,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.970$};
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 3, order 6.\
+
+Total energy: $6.172$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!50!red!50,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.231$};
+\node[style={circle,fill=blue!80!red!20,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.505$};
+\node[style={circle,fill=blue!80!red!20,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.505$};
+\node[style={circle,fill=blue!80!red!20,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$0.505$};
+\node[style={circle,fill=blue!50!red!50,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.231$};
+\node[style={circle,fill=blue!11!red!89,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$2.197$};
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 4, order 6.\
+
+Total energy: $6.000$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!73!red!27,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$0.667$};
+\node[style={circle,fill=blue!73!red!27,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.667$};
+\node[style={circle,fill=blue!73!red!27,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.667$};
+\node[style={circle,fill=blue!73!red!27,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$0.667$};
+\node[style={circle,fill=blue!32!red!68,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.667$};
+\node[style={circle,fill=blue!32!red!68,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.667$};
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 5, order 6.\
+
+Total energy: $6.155$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!56!red!44,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.086$};
+\node[style={circle,fill=blue!69!red!31,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.761$};
+\node[style={circle,fill=blue!75!red!25,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.616$};
+\node[style={circle,fill=blue!75!red!25,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$0.616$};
+\node[style={circle,fill=blue!44!red!56,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.376$};
+\node[style={circle,fill=blue!31!red!69,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.701$};
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 6, order 6.\
+
+Total energy: $6.485$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!58!red!42,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.048$};
+\node[style={circle,fill=blue!71!red!29,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.715$};
+\node[style={circle,fill=blue!77!red!23,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.579$};
+\node[style={circle,fill=blue!77!red!23,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$0.579$};
+\node[style={circle,fill=blue!34!red!66,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.628$};
+\node[style={circle,fill=blue!22!red!78,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.935$};
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 7, order 6.\
+
+Total energy: $6.325$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!62!red!38,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$0.949$};
+\node[style={circle,fill=blue!62!red!38,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.949$};
+\node[style={circle,fill=blue!75!red!25,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.632$};
+\node[style={circle,fill=blue!75!red!25,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$0.632$};
+\node[style={circle,fill=blue!49!red!51,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.265$};
+\node[style={circle,fill=blue!23!red!77,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.897$};
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 8, order 6.\
+
+Total energy: $6.686$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!63!red!37,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$0.922$};
+\node[style={circle,fill=blue!63!red!37,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.922$};
+\node[style={circle,fill=blue!77!red!23,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.577$};
+\node[style={circle,fill=blue!77!red!23,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$0.577$};
+\node[style={circle,fill=blue!37!red!63,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.549$};
+\node[style={circle,fill=blue!13!red!87,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$2.139$};
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 9, order 6.\
+
+Total energy: $6.472$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!64!red!36,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$0.894$};
+\node[style={circle,fill=blue!64!red!36,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.894$};
+\node[style={circle,fill=blue!71!red!29,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.724$};
+\node[style={circle,fill=blue!71!red!29,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$0.724$};
+\node[style={circle,fill=blue!34!red!66,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.618$};
+\node[style={circle,fill=blue!34!red!66,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.618$};
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 10, order 6.\
+
+Total energy: $6.819$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!65!red!35,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$0.873$};
+\node[style={circle,fill=blue!65!red!35,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.873$};
+\node[style={circle,fill=blue!73!red!27,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.665$};
+\node[style={circle,fill=blue!73!red!27,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$0.665$};
+\node[style={circle,fill=blue!24!red!76,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.871$};
+\node[style={circle,fill=blue!24!red!76,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.871$};
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 11, order 6.\
+
+Total energy: $6.470$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!68!red!32,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$0.797$};
+\node[style={circle,fill=blue!68!red!32,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.797$};
+\node[style={circle,fill=blue!68!red!32,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.797$};
+\node[style={circle,fill=blue!66!red!34,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$0.845$};
+\node[style={circle,fill=blue!41!red!59,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.463$};
+\node[style={circle,fill=blue!28!red!72,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.772$};
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 12, order 6.\
+
+Total energy: $6.893$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!69!red!31,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$0.780$};
+\node[style={circle,fill=blue!69!red!31,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.780$};
+\node[style={circle,fill=blue!69!red!31,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.780$};
+\node[style={circle,fill=blue!71!red!29,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$0.716$};
+\node[style={circle,fill=blue!28!red!72,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.778$};
+\node[style={circle,fill=blue!16!red!84,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$2.059$};
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 13, order 6.\
+
+Total energy: $5.657$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!72!red!28,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$0.707$};
+\node[style={circle,fill=blue!72!red!28,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.707$};
+\node[style={circle,fill=blue!72!red!28,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.707$};
+\node[style={circle,fill=blue!72!red!28,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$0.707$};
+\node[style={circle,fill=blue!43!red!57,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.414$};
+\node[style={circle,fill=blue!43!red!57,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.414$};
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 14, order 6.\
+
+Total energy: $6.745$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!72!red!28,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$0.696$};
+\node[style={circle,fill=blue!72!red!28,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.696$};
+\node[style={circle,fill=blue!72!red!28,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.696$};
+\node[style={circle,fill=blue!72!red!28,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$0.696$};
+\node[style={circle,fill=blue!20!red!80,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.980$};
+\node[style={circle,fill=blue!20!red!80,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.980$};
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 15, order 6.\
+
+Total energy: $6.899$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!47!red!53,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.316$};
+\node[style={circle,fill=blue!47!red!53,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.316$};
+\node[style={circle,fill=blue!67!red!33,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.816$};
+\node[style={circle,fill=blue!63!red!37,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$0.908$};
+\node[style={circle,fill=blue!63!red!37,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$0.908$};
+\node[style={circle,fill=blue!34!red!66,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.633$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 16, order 6.\
+
+Total energy: $7.342$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!49!red!51,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.251$};
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.293$};
+\node[style={circle,fill=blue!71!red!29,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.712$};
+\node[style={circle,fill=blue!49!red!51,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.251$};
+\node[style={circle,fill=blue!63!red!37,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$0.925$};
+\node[style={circle,fill=blue!22!red!78,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.911$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 17, order 6.\
+
+Total energy: $7.806$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!49!red!51,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.258$};
+\node[style={circle,fill=blue!49!red!51,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.258$};
+\node[style={circle,fill=blue!76!red!24,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.600$};
+\node[style={circle,fill=blue!49!red!51,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.258$};
+\node[style={circle,fill=blue!49!red!51,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.258$};
+\node[style={circle,fill=blue!12!red!88,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$2.174$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 18, order 6.\
+
+Total energy: $7.192$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!47!red!53,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.304$};
+\node[style={circle,fill=blue!74!red!26,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.660$};
+\node[style={circle,fill=blue!74!red!26,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.660$};
+\node[style={circle,fill=blue!47!red!53,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.304$};
+\node[style={circle,fill=blue!32!red!68,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.673$};
+\node[style={circle,fill=blue!36!red!64,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.591$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 19, order 6.\
+
+Total energy: $6.988$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!45!red!55,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.355$};
+\node[style={circle,fill=blue!49!red!51,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.268$};
+\node[style={circle,fill=blue!65!red!35,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.871$};
+\node[style={circle,fill=blue!65!red!35,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$0.871$};
+\node[style={circle,fill=blue!45!red!55,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.355$};
+\node[style={circle,fill=blue!49!red!51,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.268$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 20, order 6.\
+
+Total energy: $7.416$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.326$};
+\node[style={circle,fill=blue!51!red!49,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.213$};
+\node[style={circle,fill=blue!69!red!31,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.765$};
+\node[style={circle,fill=blue!64!red!36,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$0.893$};
+\node[style={circle,fill=blue!33!red!67,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.645$};
+\node[style={circle,fill=blue!36!red!64,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.573$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 21, order 6.\
+
+Total energy: $7.549$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.280$};
+\node[style={circle,fill=blue!53!red!47,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.170$};
+\node[style={circle,fill=blue!67!red!33,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.825$};
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.280$};
+\node[style={circle,fill=blue!45!red!55,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.369$};
+\node[style={circle,fill=blue!34!red!66,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.625$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 22, order 6.\
+
+Total energy: $7.996$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.284$};
+\node[style={circle,fill=blue!53!red!47,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.155$};
+\node[style={circle,fill=blue!71!red!29,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.719$};
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.284$};
+\node[style={circle,fill=blue!33!red!67,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.649$};
+\node[style={circle,fill=blue!23!red!77,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.906$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 23, order 6.\
+
+Total energy: $6.603$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!45!red!55,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.348$};
+\node[style={circle,fill=blue!61!red!39,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.977$};
+\node[style={circle,fill=blue!61!red!39,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.977$};
+\node[style={circle,fill=blue!68!red!32,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$0.798$};
+\node[style={circle,fill=blue!56!red!44,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.100$};
+\node[style={circle,fill=blue!43!red!57,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.403$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 24, order 6.\
+
+Total energy: $7.523$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!47!red!53,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.304$};
+\node[style={circle,fill=blue!62!red!38,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.949$};
+\node[style={circle,fill=blue!62!red!38,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.949$};
+\node[style={circle,fill=blue!63!red!37,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$0.915$};
+\node[style={circle,fill=blue!37!red!63,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.568$};
+\node[style={circle,fill=blue!25!red!75,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.839$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 25, order 6.\
+
+Total energy: $7.536$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.280$};
+\node[style={circle,fill=blue!62!red!38,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.955$};
+\node[style={circle,fill=blue!62!red!38,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.955$};
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.280$};
+\node[style={circle,fill=blue!50!red!50,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.239$};
+\node[style={circle,fill=blue!26!red!74,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.827$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 26, order 6.\
+
+Total energy: $8.213$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.294$};
+\node[style={circle,fill=blue!62!red!38,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.943$};
+\node[style={circle,fill=blue!62!red!38,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.943$};
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.294$};
+\node[style={circle,fill=blue!35!red!65,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.595$};
+\node[style={circle,fill=blue!13!red!87,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$2.145$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 27, order 6.\
+
+Total energy: $7.464$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!37!red!63,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.548$};
+\node[style={circle,fill=blue!74!red!26,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.637$};
+\node[style={circle,fill=blue!74!red!26,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.637$};
+\node[style={circle,fill=blue!37!red!63,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.548$};
+\node[style={circle,fill=blue!51!red!49,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.214$};
+\node[style={circle,fill=blue!24!red!76,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.881$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 28, order 6.\
+
+Total energy: $7.712$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!40!red!60,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.473$};
+\node[style={circle,fill=blue!76!red!24,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.605$};
+\node[style={circle,fill=blue!76!red!24,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.605$};
+\node[style={circle,fill=blue!40!red!60,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.473$};
+\node[style={circle,fill=blue!40!red!60,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.473$};
+\node[style={circle,fill=blue!15!red!85,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$2.082$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 29, order 6.\
+
+Total energy: $7.466$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.298$};
+\node[style={circle,fill=blue!50!red!50,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.227$};
+\node[style={circle,fill=blue!70!red!30,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.759$};
+\node[style={circle,fill=blue!50!red!50,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.227$};
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.298$};
+\node[style={circle,fill=blue!33!red!67,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.657$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 30, order 6.\
+
+Total energy: $7.301$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!35!red!65,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.602$};
+\node[style={circle,fill=blue!67!red!33,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.832$};
+\node[style={circle,fill=blue!67!red!33,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.832$};
+\node[style={circle,fill=blue!67!red!33,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$0.832$};
+\node[style={circle,fill=blue!35!red!65,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.602$};
+\node[style={circle,fill=blue!35!red!65,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.602$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 31, order 6.\
+
+Total energy: $7.208$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!37!red!63,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.560$};
+\node[style={circle,fill=blue!53!red!47,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.173$};
+\node[style={circle,fill=blue!65!red!35,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.871$};
+\node[style={circle,fill=blue!65!red!35,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$0.871$};
+\node[style={circle,fill=blue!53!red!47,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.173$};
+\node[style={circle,fill=blue!37!red!63,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.560$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 32, order 6.\
+
+Total energy: $7.665$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!38!red!62,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.542$};
+\node[style={circle,fill=blue!54!red!46,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.129$};
+\node[style={circle,fill=blue!70!red!30,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.739$};
+\node[style={circle,fill=blue!65!red!35,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$0.878$};
+\node[style={circle,fill=blue!39!red!61,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.516$};
+\node[style={circle,fill=blue!25!red!75,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.861$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 33, order 6.\
+
+Total energy: $7.664$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!39!red!61,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.495$};
+\node[style={circle,fill=blue!54!red!46,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.129$};
+\node[style={circle,fill=blue!69!red!31,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.777$};
+\node[style={circle,fill=blue!51!red!49,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.216$};
+\node[style={circle,fill=blue!51!red!49,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.201$};
+\node[style={circle,fill=blue!25!red!75,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.847$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 34, order 6.\
+
+Total energy: $7.981$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!41!red!59,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.454$};
+\node[style={circle,fill=blue!54!red!46,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.144$};
+\node[style={circle,fill=blue!72!red!28,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.696$};
+\node[style={circle,fill=blue!54!red!46,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.144$};
+\node[style={circle,fill=blue!41!red!59,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.454$};
+\node[style={circle,fill=blue!15!red!85,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$2.089$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 35, order 6.\
+
+Total energy: $8.019$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!42!red!58,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.439$};
+\node[style={circle,fill=blue!69!red!31,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.772$};
+\node[style={circle,fill=blue!69!red!31,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.772$};
+\node[style={circle,fill=blue!42!red!58,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.439$};
+\node[style={circle,fill=blue!27!red!73,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.799$};
+\node[style={circle,fill=blue!27!red!73,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.799$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 36, order 6.\
+
+Total energy: $7.937$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!41!red!59,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.461$};
+\node[style={circle,fill=blue!60!red!40,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.986$};
+\node[style={circle,fill=blue!66!red!34,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.851$};
+\node[style={circle,fill=blue!41!red!59,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.461$};
+\node[style={circle,fill=blue!42!red!58,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.423$};
+\node[style={circle,fill=blue!29!red!71,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.755$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 37, order 6.\
+
+Total energy: $8.289$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!43!red!57,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.407$};
+\node[style={circle,fill=blue!59!red!41,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.004$};
+\node[style={circle,fill=blue!70!red!30,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.736$};
+\node[style={circle,fill=blue!43!red!57,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.407$};
+\node[style={circle,fill=blue!30!red!70,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.722$};
+\node[style={circle,fill=blue!18!red!82,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$2.013$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 38, order 6.\
+
+Total energy: $7.565$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.281$};
+\node[style={circle,fill=blue!62!red!38,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.946$};
+\node[style={circle,fill=blue!62!red!38,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.946$};
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.281$};
+\node[style={circle,fill=blue!37!red!63,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.555$};
+\node[style={circle,fill=blue!37!red!63,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.555$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 39, order 6.\
+
+Total energy: $7.419$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!56!red!44,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.093$};
+\node[style={circle,fill=blue!62!red!38,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.934$};
+\node[style={circle,fill=blue!62!red!38,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.934$};
+\node[style={circle,fill=blue!56!red!44,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.093$};
+\node[style={circle,fill=blue!32!red!68,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.682$};
+\node[style={circle,fill=blue!32!red!68,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.682$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 40, order 6.\
+
+Total energy: $8.118$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!41!red!59,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.456$};
+\node[style={circle,fill=blue!57!red!43,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.066$};
+\node[style={circle,fill=blue!70!red!30,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.759$};
+\node[style={circle,fill=blue!51!red!49,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.202$};
+\node[style={circle,fill=blue!26!red!74,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.820$};
+\node[style={circle,fill=blue!26!red!74,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.816$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 41, order 6.\
+
+Total energy: $7.738$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!39!red!61,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.496$};
+\node[style={circle,fill=blue!64!red!36,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.885$};
+\node[style={circle,fill=blue!64!red!36,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.885$};
+\node[style={circle,fill=blue!63!red!37,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$0.907$};
+\node[style={circle,fill=blue!28!red!72,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.783$};
+\node[style={circle,fill=blue!28!red!72,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.783$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 42, order 6.\
+
+Total energy: $7.299$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!45!red!55,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.350$};
+\node[style={circle,fill=blue!66!red!34,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.855$};
+\node[style={circle,fill=blue!66!red!34,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.855$};
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.282$};
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.334$};
+\node[style={circle,fill=blue!34!red!66,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.623$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 43, order 6.\
+
+Total energy: $8.107$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!43!red!57,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.410$};
+\node[style={circle,fill=blue!65!red!35,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.876$};
+\node[style={circle,fill=blue!65!red!35,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.876$};
+\node[style={circle,fill=blue!52!red!48,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.196$};
+\node[style={circle,fill=blue!30!red!70,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.719$};
+\node[style={circle,fill=blue!18!red!82,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$2.029$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 44, order 6.\
+
+Total energy: $7.252$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!42!red!58,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.424$};
+\node[style={circle,fill=blue!67!red!33,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.808$};
+\node[style={circle,fill=blue!67!red!33,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.808$};
+\node[style={circle,fill=blue!42!red!58,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.424$};
+\node[style={circle,fill=blue!44!red!56,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.394$};
+\node[style={circle,fill=blue!44!red!56,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.394$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 45, order 6.\
+
+Total energy: $8.283$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!44!red!56,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.381$};
+\node[style={circle,fill=blue!67!red!33,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.820$};
+\node[style={circle,fill=blue!67!red!33,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.820$};
+\node[style={circle,fill=blue!44!red!56,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.381$};
+\node[style={circle,fill=blue!21!red!79,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.940$};
+\node[style={circle,fill=blue!21!red!79,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.940$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 46, order 6.\
+
+Total energy: $7.766$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!57!red!43,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.063$};
+\node[style={circle,fill=blue!49!red!51,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.267$};
+\node[style={circle,fill=blue!66!red!34,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.836$};
+\node[style={circle,fill=blue!38!red!62,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.542$};
+\node[style={circle,fill=blue!36!red!64,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.583$};
+\node[style={circle,fill=blue!40!red!60,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.476$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 47, order 6.\
+
+Total energy: $8.000$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.333$};
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.333$};
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.333$};
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.333$};
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.333$};
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.333$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 48, order 6.\
+
+Total energy: $8.390$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.275$};
+\node[style={circle,fill=blue!49!red!51,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.270$};
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.275$};
+\node[style={circle,fill=blue!35!red!65,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.615$};
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.339$};
+\node[style={circle,fill=blue!35!red!65,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.615$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 49, order 6.\
+
+Total energy: $8.686$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!53!red!47,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.154$};
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.275$};
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.275$};
+\node[style={circle,fill=blue!36!red!64,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.569$};
+\node[style={circle,fill=blue!36!red!64,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.569$};
+\node[style={circle,fill=blue!25!red!75,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.844$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 50, order 6.\
+
+Total energy: $7.806$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!39!red!61,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.516$};
+\node[style={circle,fill=blue!68!red!32,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.800$};
+\node[style={circle,fill=blue!68!red!32,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.800$};
+\node[style={circle,fill=blue!36!red!64,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.587$};
+\node[style={circle,fill=blue!36!red!64,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.587$};
+\node[style={circle,fill=blue!39!red!61,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.516$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 51, order 6.\
+
+Total energy: $7.123$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!45!red!55,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.349$};
+\node[style={circle,fill=blue!73!red!27,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.674$};
+\node[style={circle,fill=blue!58!red!42,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.053$};
+\node[style={circle,fill=blue!33!red!67,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.645$};
+\node[style={circle,fill=blue!58!red!42,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.053$};
+\node[style={circle,fill=blue!45!red!55,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.349$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 52, order 6.\
+
+Total energy: $8.046$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.324$};
+\node[style={circle,fill=blue!57!red!43,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.062$};
+\node[style={circle,fill=blue!70!red!30,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.754$};
+\node[style={circle,fill=blue!39!red!61,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.506$};
+\node[style={circle,fill=blue!36!red!64,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.588$};
+\node[style={circle,fill=blue!26!red!74,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.814$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 53, order 6.\
+
+Total energy: $7.657$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!43!red!57,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.414$};
+\node[style={circle,fill=blue!51!red!49,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.207$};
+\node[style={circle,fill=blue!51!red!49,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.207$};
+\node[style={circle,fill=blue!51!red!49,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.207$};
+\node[style={circle,fill=blue!51!red!49,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.207$};
+\node[style={circle,fill=blue!43!red!57,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.414$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 54, order 6.\
+
+Total energy: $8.183$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!45!red!55,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.350$};
+\node[style={circle,fill=blue!53!red!47,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.161$};
+\node[style={circle,fill=blue!55!red!45,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.111$};
+\node[style={circle,fill=blue!37!red!63,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.563$};
+\node[style={circle,fill=blue!50!red!50,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.232$};
+\node[style={circle,fill=blue!28!red!72,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.766$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 55, order 6.\
+
+Total energy: $8.670$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!49!red!51,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.263$};
+\node[style={circle,fill=blue!54!red!46,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.132$};
+\node[style={circle,fill=blue!54!red!46,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.132$};
+\node[style={circle,fill=blue!38!red!62,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.536$};
+\node[style={circle,fill=blue!38!red!62,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.536$};
+\node[style={circle,fill=blue!16!red!84,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$2.072$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 56, order 6.\
+
+Total energy: $8.944$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!52!red!48,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.193$};
+\node[style={circle,fill=blue!52!red!48,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.193$};
+\node[style={circle,fill=blue!52!red!48,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.193$};
+\node[style={circle,fill=blue!27!red!73,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.789$};
+\node[style={circle,fill=blue!27!red!73,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.789$};
+\node[style={circle,fill=blue!27!red!73,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.789$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 57, order 6.\
+
+Total energy: $8.355$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.346$};
+\node[style={circle,fill=blue!53!red!47,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.170$};
+\node[style={circle,fill=blue!59!red!41,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.017$};
+\node[style={circle,fill=blue!29!red!71,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.747$};
+\node[style={circle,fill=blue!42!red!58,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.421$};
+\node[style={circle,fill=blue!33!red!67,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.653$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 58, order 6.\
+
+Total energy: $8.739$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!49!red!51,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.269$};
+\node[style={circle,fill=blue!57!red!43,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.060$};
+\node[style={circle,fill=blue!57!red!43,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.060$};
+\node[style={circle,fill=blue!31!red!69,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.698$};
+\node[style={circle,fill=blue!31!red!69,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.698$};
+\node[style={circle,fill=blue!21!red!79,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.955$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 59, order 6.\
+
+Total energy: $6.633$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!51!red!49,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.206$};
+\node[style={circle,fill=blue!51!red!49,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.206$};
+\node[style={circle,fill=blue!64!red!36,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.905$};
+\node[style={circle,fill=blue!64!red!36,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$0.905$};
+\node[style={circle,fill=blue!64!red!36,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$0.905$};
+\node[style={circle,fill=blue!39!red!61,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.508$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 60, order 6.\
+
+Total energy: $7.217$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!52!red!48,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.185$};
+\node[style={circle,fill=blue!52!red!48,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.185$};
+\node[style={circle,fill=blue!71!red!29,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.712$};
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.328$};
+\node[style={circle,fill=blue!60!red!40,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$0.986$};
+\node[style={circle,fill=blue!26!red!74,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.821$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 61, order 6.\
+
+Total energy: $7.363$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!54!red!46,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.150$};
+\node[style={circle,fill=blue!54!red!46,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.150$};
+\node[style={circle,fill=blue!71!red!29,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.721$};
+\node[style={circle,fill=blue!54!red!46,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.150$};
+\node[style={circle,fill=blue!54!red!46,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.150$};
+\node[style={circle,fill=blue!17!red!83,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$2.039$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 62, order 6.\
+
+Total energy: $8.253$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!49!red!51,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.273$};
+\node[style={circle,fill=blue!60!red!40,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.003$};
+\node[style={circle,fill=blue!71!red!29,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.729$};
+\node[style={circle,fill=blue!30!red!70,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.735$};
+\node[style={circle,fill=blue!30!red!70,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.735$};
+\node[style={circle,fill=blue!28!red!72,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.777$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 63, order 6.\
+
+Total energy: $8.059$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!53!red!47,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.156$};
+\node[style={circle,fill=blue!53!red!47,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.156$};
+\node[style={circle,fill=blue!66!red!34,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.855$};
+\node[style={circle,fill=blue!28!red!72,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.769$};
+\node[style={circle,fill=blue!44!red!56,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.389$};
+\node[style={circle,fill=blue!30!red!70,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.732$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 64, order 6.\
+
+Total energy: $8.302$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!55!red!45,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.120$};
+\node[style={circle,fill=blue!55!red!45,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.120$};
+\node[style={circle,fill=blue!69!red!31,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.777$};
+\node[style={circle,fill=blue!32!red!68,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.666$};
+\node[style={circle,fill=blue!32!red!68,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.666$};
+\node[style={circle,fill=blue!21!red!79,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.953$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 65, order 6.\
+
+Total energy: $7.790$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!52!red!48,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.178$};
+\node[style={circle,fill=blue!52!red!48,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.178$};
+\node[style={circle,fill=blue!64!red!36,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.886$};
+\node[style={circle,fill=blue!39!red!61,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.512$};
+\node[style={circle,fill=blue!38!red!62,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.525$};
+\node[style={circle,fill=blue!39!red!61,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.512$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 66, order 6.\
+
+Total energy: $6.928$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!53!red!47,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.155$};
+\node[style={circle,fill=blue!53!red!47,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.155$};
+\node[style={circle,fill=blue!53!red!47,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.155$};
+\node[style={circle,fill=blue!53!red!47,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.155$};
+\node[style={circle,fill=blue!53!red!47,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.155$};
+\node[style={circle,fill=blue!53!red!47,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.155$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 67, order 6.\
+
+Total energy: $8.047$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!54!red!46,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.143$};
+\node[style={circle,fill=blue!54!red!46,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.143$};
+\node[style={circle,fill=blue!55!red!45,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.120$};
+\node[style={circle,fill=blue!53!red!47,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.166$};
+\node[style={circle,fill=blue!30!red!70,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.737$};
+\node[style={circle,fill=blue!30!red!70,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.737$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 68, order 6.\
+
+Total energy: $7.588$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!55!red!45,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.103$};
+\node[style={circle,fill=blue!55!red!45,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.103$};
+\node[style={circle,fill=blue!59!red!41,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.008$};
+\node[style={circle,fill=blue!39!red!61,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.518$};
+\node[style={circle,fill=blue!49!red!51,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.270$};
+\node[style={circle,fill=blue!36!red!64,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.586$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 69, order 6.\
+
+Total energy: $8.367$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!55!red!45,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.106$};
+\node[style={circle,fill=blue!55!red!45,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.106$};
+\node[style={circle,fill=blue!55!red!45,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.112$};
+\node[style={circle,fill=blue!43!red!57,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.414$};
+\node[style={circle,fill=blue!34!red!66,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.631$};
+\node[style={circle,fill=blue!19!red!81,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.998$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 70, order 6.\
+
+Total energy: $8.585$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!56!red!44,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.079$};
+\node[style={circle,fill=blue!56!red!44,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.079$};
+\node[style={circle,fill=blue!59!red!41,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.013$};
+\node[style={circle,fill=blue!34!red!66,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.636$};
+\node[style={circle,fill=blue!23!red!77,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.889$};
+\node[style={circle,fill=blue!23!red!77,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.889$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 71, order 6.\
+
+Total energy: $7.620$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!55!red!45,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.110$};
+\node[style={circle,fill=blue!55!red!45,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.110$};
+\node[style={circle,fill=blue!61!red!39,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.957$};
+\node[style={circle,fill=blue!45!red!55,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.364$};
+\node[style={circle,fill=blue!45!red!55,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.364$};
+\node[style={circle,fill=blue!31!red!69,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.713$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 72, order 6.\
+
+Total energy: $6.000$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!60!red!40,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.000$};
+\node[style={circle,fill=blue!60!red!40,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.000$};
+\node[style={circle,fill=blue!60!red!40,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.000$};
+\node[style={circle,fill=blue!60!red!40,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.000$};
+\node[style={circle,fill=blue!60!red!40,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.000$};
+\node[style={circle,fill=blue!60!red!40,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.000$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 73, order 6.\
+
+Total energy: $7.435$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!60!red!40,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$0.985$};
+\node[style={circle,fill=blue!60!red!40,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.985$};
+\node[style={circle,fill=blue!60!red!40,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.985$};
+\node[style={circle,fill=blue!34!red!66,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.641$};
+\node[style={circle,fill=blue!52!red!48,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.200$};
+\node[style={circle,fill=blue!34!red!66,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.641$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 74, order 6.\
+
+Total energy: $7.533$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!61!red!39,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$0.970$};
+\node[style={circle,fill=blue!61!red!39,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.970$};
+\node[style={circle,fill=blue!61!red!39,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.970$};
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.335$};
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.335$};
+\node[style={circle,fill=blue!21!red!79,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.954$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 75, order 6.\
+
+Total energy: $8.325$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!62!red!38,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$0.949$};
+\node[style={circle,fill=blue!62!red!38,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.949$};
+\node[style={circle,fill=blue!62!red!38,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$0.949$};
+\node[style={circle,fill=blue!26!red!74,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.826$};
+\node[style={circle,fill=blue!26!red!74,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.826$};
+\node[style={circle,fill=blue!26!red!74,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.826$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 76, order 6.\
+
+Total energy: $8.293$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!36!red!64,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.573$};
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.287$};
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.287$};
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.287$};
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.287$};
+\node[style={circle,fill=blue!36!red!64,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.573$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 77, order 6.\
+
+Total energy: $7.732$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!36!red!64,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.571$};
+\node[style={circle,fill=blue!45!red!55,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.351$};
+\node[style={circle,fill=blue!36!red!64,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.571$};
+\node[style={circle,fill=blue!68!red!32,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$0.795$};
+\node[style={circle,fill=blue!57!red!43,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.064$};
+\node[style={circle,fill=blue!44!red!56,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.380$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 78, order 6.\
+
+Total energy: $8.427$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!40!red!60,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.484$};
+\node[style={circle,fill=blue!47!red!53,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.316$};
+\node[style={circle,fill=blue!40!red!60,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.484$};
+\node[style={circle,fill=blue!64!red!36,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$0.901$};
+\node[style={circle,fill=blue!40!red!60,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.484$};
+\node[style={circle,fill=blue!29!red!71,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.756$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 79, order 6.\
+
+Total energy: $8.698$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!37!red!63,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.560$};
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.293$};
+\node[style={circle,fill=blue!37!red!63,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.560$};
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.293$};
+\node[style={circle,fill=blue!53!red!47,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.167$};
+\node[style={circle,fill=blue!26!red!74,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.827$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 80, order 6.\
+
+Total energy: $9.203$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!39!red!61,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.495$};
+\node[style={circle,fill=blue!47!red!53,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.310$};
+\node[style={circle,fill=blue!39!red!61,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.495$};
+\node[style={circle,fill=blue!47!red!53,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.310$};
+\node[style={circle,fill=blue!39!red!61,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.495$};
+\node[style={circle,fill=blue!15!red!85,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$2.098$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 81, order 6.\
+
+Total energy: $8.472$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!39!red!61,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.494$};
+\node[style={circle,fill=blue!55!red!45,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.124$};
+\node[style={circle,fill=blue!39!red!61,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.494$};
+\node[style={circle,fill=blue!55!red!45,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.124$};
+\node[style={circle,fill=blue!34!red!66,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.618$};
+\node[style={circle,fill=blue!34!red!66,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.618$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 82, order 6.\
+
+Total energy: $8.293$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!42!red!58,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.431$};
+\node[style={circle,fill=blue!42!red!58,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.431$};
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.284$};
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.284$};
+\node[style={circle,fill=blue!42!red!58,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.431$};
+\node[style={circle,fill=blue!42!red!58,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.431$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 83, order 6.\
+
+Total energy: $8.858$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!40!red!60,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.485$};
+\node[style={circle,fill=blue!40!red!60,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.485$};
+\node[style={circle,fill=blue!52!red!48,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.197$};
+\node[style={circle,fill=blue!52!red!48,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.197$};
+\node[style={circle,fill=blue!29!red!71,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.746$};
+\node[style={circle,fill=blue!29!red!71,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.746$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 84, order 6.\
+
+Total energy: $8.708$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!42!red!58,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.438$};
+\node[style={circle,fill=blue!38!red!62,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.535$};
+\node[style={circle,fill=blue!42!red!58,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.438$};
+\node[style={circle,fill=blue!65!red!35,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$0.865$};
+\node[style={circle,fill=blue!30!red!70,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.715$};
+\node[style={circle,fill=blue!30!red!70,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.715$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 85, order 6.\
+
+Total energy: $8.704$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!39!red!61,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.505$};
+\node[style={circle,fill=blue!42!red!58,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.434$};
+\node[style={circle,fill=blue!39!red!61,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.505$};
+\node[style={circle,fill=blue!47!red!53,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.305$};
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.283$};
+\node[style={circle,fill=blue!32!red!68,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.674$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 86, order 6.\
+
+Total energy: $9.234$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!41!red!59,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.463$};
+\node[style={circle,fill=blue!41!red!59,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.466$};
+\node[style={circle,fill=blue!41!red!59,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.463$};
+\node[style={circle,fill=blue!51!red!49,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.207$};
+\node[style={circle,fill=blue!34!red!66,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.634$};
+\node[style={circle,fill=blue!19!red!81,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$2.001$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 87, order 6.\
+
+Total energy: $8.745$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!40!red!60,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.490$};
+\node[style={circle,fill=blue!40!red!60,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.490$};
+\node[style={circle,fill=blue!40!red!60,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.490$};
+\node[style={circle,fill=blue!40!red!60,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.490$};
+\node[style={circle,fill=blue!44!red!56,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.393$};
+\node[style={circle,fill=blue!44!red!56,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.393$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 88, order 6.\
+
+Total energy: $9.657$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!41!red!59,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.457$};
+\node[style={circle,fill=blue!41!red!59,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.457$};
+\node[style={circle,fill=blue!41!red!59,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.457$};
+\node[style={circle,fill=blue!41!red!59,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.457$};
+\node[style={circle,fill=blue!22!red!78,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.914$};
+\node[style={circle,fill=blue!22!red!78,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.914$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 89, order 6.\
+
+Total energy: $8.887$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!33!red!67,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.661$};
+\node[style={circle,fill=blue!65!red!35,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.862$};
+\node[style={circle,fill=blue!33!red!67,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.661$};
+\node[style={circle,fill=blue!33!red!67,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.661$};
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.340$};
+\node[style={circle,fill=blue!31!red!69,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.703$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 90, order 6.\
+
+Total energy: $9.068$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!36!red!64,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.592$};
+\node[style={circle,fill=blue!68!red!32,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$0.805$};
+\node[style={circle,fill=blue!36!red!64,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.592$};
+\node[style={circle,fill=blue!36!red!64,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.592$};
+\node[style={circle,fill=blue!36!red!64,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.592$};
+\node[style={circle,fill=blue!23!red!77,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.895$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 91, order 6.\
+
+Total energy: $9.123$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!31!red!69,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.705$};
+\node[style={circle,fill=blue!53!red!47,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.152$};
+\node[style={circle,fill=blue!31!red!69,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.705$};
+\node[style={circle,fill=blue!53!red!47,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.152$};
+\node[style={circle,fill=blue!31!red!69,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.705$};
+\node[style={circle,fill=blue!31!red!69,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.705$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 92, order 6.\
+
+Total energy: $8.757$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!33!red!67,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.663$};
+\node[style={circle,fill=blue!56!red!44,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.084$};
+\node[style={circle,fill=blue!33!red!67,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.663$};
+\node[style={circle,fill=blue!41!red!59,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.454$};
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.333$};
+\node[style={circle,fill=blue!37!red!63,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.558$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 93, order 6.\
+
+Total energy: $9.276$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!34!red!66,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.626$};
+\node[style={circle,fill=blue!53!red!47,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.161$};
+\node[style={circle,fill=blue!34!red!66,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.626$};
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.346$};
+\node[style={circle,fill=blue!35!red!65,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.610$};
+\node[style={circle,fill=blue!23!red!77,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.907$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 94, order 6.\
+
+Total energy: $9.493$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!36!red!64,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.572$};
+\node[style={circle,fill=blue!56!red!44,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.099$};
+\node[style={circle,fill=blue!36!red!64,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.572$};
+\node[style={circle,fill=blue!36!red!64,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.572$};
+\node[style={circle,fill=blue!25!red!75,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.838$};
+\node[style={circle,fill=blue!25!red!75,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.838$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 95, order 6.\
+
+Total energy: $8.819$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!38!red!62,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.538$};
+\node[style={circle,fill=blue!38!red!62,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.538$};
+\node[style={circle,fill=blue!47!red!53,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.311$};
+\node[style={circle,fill=blue!37!red!63,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.560$};
+\node[style={circle,fill=blue!47!red!53,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.311$};
+\node[style={circle,fill=blue!37!red!63,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.560$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 96, order 6.\
+
+Total energy: $8.139$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!38!red!62,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.528$};
+\node[style={circle,fill=blue!41!red!59,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.467$};
+\node[style={circle,fill=blue!38!red!62,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.528$};
+\node[style={circle,fill=blue!54!red!46,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.145$};
+\node[style={circle,fill=blue!54!red!46,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.145$};
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.326$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 97, order 6.\
+
+Total energy: $8.958$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!39!red!61,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.503$};
+\node[style={circle,fill=blue!40!red!60,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.488$};
+\node[style={circle,fill=blue!40!red!60,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.488$};
+\node[style={circle,fill=blue!39!red!61,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.503$};
+\node[style={circle,fill=blue!51!red!49,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.219$};
+\node[style={circle,fill=blue!29!red!71,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.758$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 98, order 6.\
+
+Total energy: $9.371$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!41!red!59,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.466$};
+\node[style={circle,fill=blue!41!red!59,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.466$};
+\node[style={circle,fill=blue!41!red!59,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.466$};
+\node[style={circle,fill=blue!41!red!59,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.466$};
+\node[style={circle,fill=blue!41!red!59,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.466$};
+\node[style={circle,fill=blue!17!red!83,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$2.041$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 99, order 6.\
+
+Total energy: $8.000$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.333$};
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.333$};
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.333$};
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.333$};
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.333$};
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.333$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 100, order 6.\
+
+Total energy: $8.761$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!36!red!64,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.592$};
+\node[style={circle,fill=blue!47!red!53,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.307$};
+\node[style={circle,fill=blue!50!red!50,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.239$};
+\node[style={circle,fill=blue!47!red!53,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.307$};
+\node[style={circle,fill=blue!36!red!64,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.592$};
+\node[style={circle,fill=blue!30!red!70,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.725$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 101, order 6.\
+
+Total energy: $8.755$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!34!red!66,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.637$};
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.291$};
+\node[style={circle,fill=blue!41!red!59,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.450$};
+\node[style={circle,fill=blue!41!red!59,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.450$};
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.291$};
+\node[style={circle,fill=blue!34!red!66,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.637$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 102, order 6.\
+
+Total energy: $8.979$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!39!red!61,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.514$};
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.282$};
+\node[style={circle,fill=blue!42!red!58,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.436$};
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.282$};
+\node[style={circle,fill=blue!39!red!61,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.514$};
+\node[style={circle,fill=blue!21!red!79,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.950$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 103, order 6.\
+
+Total energy: $9.474$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!37!red!63,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.550$};
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.340$};
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.340$};
+\node[style={circle,fill=blue!37!red!63,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.550$};
+\node[style={circle,fill=blue!25!red!75,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.847$};
+\node[style={circle,fill=blue!25!red!75,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.847$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 104, order 6.\
+
+Total energy: $9.607$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!39!red!61,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.513$};
+\node[style={circle,fill=blue!50!red!50,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.239$};
+\node[style={circle,fill=blue!39!red!61,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.513$};
+\node[style={circle,fill=blue!28!red!72,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.781$};
+\node[style={circle,fill=blue!28!red!72,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.781$};
+\node[style={circle,fill=blue!28!red!72,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.781$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 105, order 6.\
+
+Total energy: $8.828$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!35!red!65,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.604$};
+\node[style={circle,fill=blue!51!red!49,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.207$};
+\node[style={circle,fill=blue!35!red!65,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.604$};
+\node[style={circle,fill=blue!51!red!49,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.207$};
+\node[style={circle,fill=blue!35!red!65,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.604$};
+\node[style={circle,fill=blue!35!red!65,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.604$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (3);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 106, order 6.\
+
+Total energy: $8.559$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.331$};
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.331$};
+\node[style={circle,fill=blue!34!red!66,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.624$};
+\node[style={circle,fill=blue!59!red!41,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.025$};
+\node[style={circle,fill=blue!34!red!66,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.624$};
+\node[style={circle,fill=blue!34!red!66,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.624$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (3);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 107, order 6.\
+
+Total energy: $8.663$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!45!red!55,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.351$};
+\node[style={circle,fill=blue!45!red!55,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.351$};
+\node[style={circle,fill=blue!34!red!66,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.628$};
+\node[style={circle,fill=blue!45!red!55,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.352$};
+\node[style={circle,fill=blue!45!red!55,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.352$};
+\node[style={circle,fill=blue!34!red!66,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.628$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (3);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 108, order 6.\
+
+Total energy: $8.859$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!47!red!53,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.311$};
+\node[style={circle,fill=blue!47!red!53,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.311$};
+\node[style={circle,fill=blue!37!red!63,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.557$};
+\node[style={circle,fill=blue!50!red!50,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.236$};
+\node[style={circle,fill=blue!37!red!63,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.557$};
+\node[style={circle,fill=blue!24!red!76,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.886$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (3);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 109, order 6.\
+
+Total energy: $8.000$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.333$};
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.333$};
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.333$};
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.333$};
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.333$};
+\node[style={circle,fill=blue!46!red!54,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.333$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (3);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 110, order 6.\
+
+Total energy: $8.745$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.283$};
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.283$};
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.283$};
+\node[style={circle,fill=blue!48!red!52,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.283$};
+\node[style={circle,fill=blue!27!red!73,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.806$};
+\node[style={circle,fill=blue!27!red!73,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.806$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (3);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 111, order 6.\
+
+Total energy: $9.403$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!49!red!51,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.249$};
+\node[style={circle,fill=blue!49!red!51,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.249$};
+\node[style={circle,fill=blue!30!red!70,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.726$};
+\node[style={circle,fill=blue!30!red!70,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.726$};
+\node[style={circle,fill=blue!30!red!70,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.726$};
+\node[style={circle,fill=blue!30!red!70,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.726$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (3);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+\vbox{
+Graph 112, order 6.\
+
+Total energy: $10.000$ \\\ 
+\begin{tikzpicture}
+\node[style={circle,fill=blue!32!red!68,draw,minimum size=1em,inner sep=3pt]}] (1) at (1*360/6:1.5) {$1.667$};
+\node[style={circle,fill=blue!32!red!68,draw,minimum size=1em,inner sep=3pt]}] (2) at (2*360/6:1.5) {$1.667$};
+\node[style={circle,fill=blue!32!red!68,draw,minimum size=1em,inner sep=3pt]}] (3) at (3*360/6:1.5) {$1.667$};
+\node[style={circle,fill=blue!32!red!68,draw,minimum size=1em,inner sep=3pt]}] (4) at (4*360/6:1.5) {$1.667$};
+\node[style={circle,fill=blue!32!red!68,draw,minimum size=1em,inner sep=3pt]}] (5) at (5*360/6:1.5) {$1.667$};
+\node[style={circle,fill=blue!32!red!68,draw,minimum size=1em,inner sep=3pt]}] (6) at (6*360/6:1.5) {$1.667$};
+\path[draw,thick](1) edge node {} (2);
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (3);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+\\}
+
+
+
+
+
+\end{multicols}
+\end{document}

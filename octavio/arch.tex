@@ -1,0 +1,4150 @@
+\documentclass[12pt, spanish]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{geometry}
+\usepackage{amssymb}
+\usepackage{wasysym}
+\usepackage{color}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{pdfpages}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{tikz}
+\newgeometry{top=1 cm,bottom=2cm,left=0.5cm,right=0.5cm}
+\selectlanguage{spanish}
+\title{ }
+\date{}
+\author{}
+
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ %
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=single,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=Octave,                 % the language of the code
+  otherkeywords={*,...},           % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+  title=\lstname,                  % show the filename of files included with \lstinputlisting; also try caption instead of title
+  xleftmargin=0cm,
+}
+
+\title{}
+\date{}
+\author{}
+\begin{document}
+\begin{multicols}{4}
+
+\vbox{
+Graph 1, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 0 & 0 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 0.447214$\\ 
+$2: 0.447214$\\ 
+$3: 0.447214$\\ 
+$4: 0.447214$\\ 
+$5: 0.447214$\\ 
+$6: 2.236068$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 2, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 0 & 0 & 0 & 0 & 0\\
+1 & 1 & 1 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.282795$\\ 
+$2: 0.542173$\\ 
+$3: 0.542173$\\ 
+$4: 0.542173$\\ 
+$5: 0.939071$\\ 
+$6: 1.970242$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 3, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 0 & 0 & 0 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.230643$\\ 
+$2: 0.504761$\\ 
+$3: 0.504761$\\ 
+$4: 0.504761$\\ 
+$5: 1.230643$\\ 
+$6: 2.196690$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 4, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 0 & 1 & 0\\
+0 & 0 & 0 & 0 & 1 & 0\\
+0 & 0 & 0 & 0 & 0 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 1 & 0 & 0 & 0 & 1\\
+0 & 0 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 0.666667$\\ 
+$2: 0.666667$\\ 
+$3: 0.666667$\\ 
+$4: 0.666667$\\ 
+$5: 1.666667$\\ 
+$6: 1.666667$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 5, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 0\\
+0 & 0 & 0 & 0 & 0 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 1 & 0 & 0 & 0 & 0\\
+1 & 0 & 1 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.085765$\\ 
+$2: 0.760845$\\ 
+$3: 0.615537$\\ 
+$4: 0.615537$\\ 
+$5: 1.376382$\\ 
+$6: 1.701302$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 6, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 0\\
+0 & 0 & 0 & 0 & 0 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 1 & 0 & 0 & 0 & 1\\
+1 & 0 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.048450$\\ 
+$2: 0.715402$\\ 
+$3: 0.579322$\\ 
+$4: 0.579322$\\ 
+$5: 1.627772$\\ 
+$6: 1.934936$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 7, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 1 & 0 & 0 & 0 & 0\\
+1 & 1 & 1 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 0.948683$\\ 
+$2: 0.948683$\\ 
+$3: 0.632456$\\ 
+$4: 0.632456$\\ 
+$5: 1.264911$\\ 
+$6: 1.897367$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 8, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 1 & 0 & 0 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 0.922014$\\ 
+$2: 0.922014$\\ 
+$3: 0.576880$\\ 
+$4: 0.576880$\\ 
+$5: 1.549410$\\ 
+$6: 2.138648$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 9, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 0\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 0 & 0\\
+1 & 1 & 0 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 0.894427$\\ 
+$2: 0.894427$\\ 
+$3: 0.723607$\\ 
+$4: 0.723607$\\ 
+$5: 1.618034$\\ 
+$6: 1.618034$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 10, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 0\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 0 & 1\\
+1 & 1 & 0 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 0.872872$\\ 
+$2: 0.872872$\\ 
+$3: 0.665431$\\ 
+$4: 0.665431$\\ 
+$5: 1.871019$\\ 
+$6: 1.871019$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 11, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 0 & 0\\
+1 & 1 & 1 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 0.796751$\\ 
+$2: 0.796751$\\ 
+$3: 0.796751$\\ 
+$4: 0.844574$\\ 
+$5: 1.462845$\\ 
+$6: 1.771981$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 12, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 0.779966$\\ 
+$2: 0.779966$\\ 
+$3: 0.779966$\\ 
+$4: 0.715670$\\ 
+$5: 1.778057$\\ 
+$6: 2.058977$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 13, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+1 & 1 & 1 & 1 & 0 & 0\\
+1 & 1 & 1 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 0.707107$\\ 
+$2: 0.707107$\\ 
+$3: 0.707107$\\ 
+$4: 0.707107$\\ 
+$5: 1.414214$\\ 
+$6: 1.414214$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 14, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+1 & 1 & 1 & 1 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 0.696311$\\ 
+$2: 0.696311$\\ 
+$3: 0.696311$\\ 
+$4: 0.696311$\\ 
+$5: 1.979660$\\ 
+$6: 1.979660$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 15, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 0 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 0 & 0 & 0 & 0 & 0\\
+0 & 1 & 0 & 0 & 0 & 0\\
+1 & 1 & 1 & 0 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.316497$\\ 
+$2: 1.316497$\\ 
+$3: 0.816497$\\ 
+$4: 0.908248$\\ 
+$5: 0.908248$\\ 
+$6: 1.632993$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 16, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 0 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 0 & 0 & 0 & 0 & 1\\
+0 & 1 & 0 & 0 & 0 & 0\\
+1 & 1 & 1 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.251032$\\ 
+$2: 1.292512$\\ 
+$3: 0.711859$\\ 
+$4: 1.251032$\\ 
+$5: 0.924916$\\ 
+$6: 1.911139$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 17, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 0 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 0 & 0 & 0 & 0 & 1\\
+0 & 1 & 0 & 0 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.257965$\\ 
+$2: 1.257965$\\ 
+$3: 0.600267$\\ 
+$4: 1.257965$\\ 
+$5: 1.257965$\\ 
+$6: 2.174296$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 18, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 0 & 1\\
+0 & 0 & 0 & 0 & 1 & 0\\
+0 & 0 & 0 & 0 & 1 & 0\\
+1 & 0 & 0 & 0 & 0 & 1\\
+0 & 1 & 1 & 0 & 0 & 1\\
+1 & 0 & 0 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.303597$\\ 
+$2: 0.660128$\\ 
+$3: 0.660128$\\ 
+$4: 1.303597$\\ 
+$5: 1.673484$\\ 
+$6: 1.590755$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 19, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 0 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 0\\
+1 & 0 & 0 & 0 & 0 & 0\\
+0 & 1 & 1 & 0 & 0 & 0\\
+1 & 1 & 0 & 0 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.354554$\\ 
+$2: 1.268286$\\ 
+$3: 0.871119$\\ 
+$4: 0.871119$\\ 
+$5: 1.354554$\\ 
+$6: 1.268286$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 20, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 0 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 0\\
+1 & 0 & 0 & 0 & 0 & 0\\
+0 & 1 & 1 & 0 & 0 & 1\\
+1 & 1 & 0 & 0 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.326125$\\ 
+$2: 1.212524$\\ 
+$3: 0.765413$\\ 
+$4: 0.893436$\\ 
+$5: 1.645213$\\ 
+$6: 1.573270$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 21, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 0 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 0\\
+1 & 0 & 0 & 0 & 0 & 1\\
+0 & 1 & 1 & 0 & 0 & 0\\
+1 & 1 & 0 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.279751$\\ 
+$2: 1.170342$\\ 
+$3: 0.824781$\\ 
+$4: 1.279751$\\ 
+$5: 1.369307$\\ 
+$6: 1.625313$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 22, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 0 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 0\\
+1 & 0 & 0 & 0 & 0 & 1\\
+0 & 1 & 1 & 0 & 0 & 1\\
+1 & 1 & 0 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.284034$\\ 
+$2: 1.155038$\\ 
+$3: 0.718554$\\ 
+$4: 1.284034$\\ 
+$5: 1.648932$\\ 
+$6: 1.905519$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 23, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 0 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+1 & 0 & 0 & 0 & 0 & 0\\
+0 & 1 & 1 & 0 & 0 & 0\\
+1 & 1 & 1 & 0 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.347775$\\ 
+$2: 0.976793$\\ 
+$3: 0.976793$\\ 
+$4: 0.797548$\\ 
+$5: 1.100453$\\ 
+$6: 1.403359$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 24, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 0 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+1 & 0 & 0 & 0 & 0 & 0\\
+0 & 1 & 1 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.303986$\\ 
+$2: 0.949013$\\ 
+$3: 0.949013$\\ 
+$4: 0.914631$\\ 
+$5: 1.567568$\\ 
+$6: 1.839128$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 25, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 0 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+1 & 0 & 0 & 0 & 0 & 1\\
+0 & 1 & 1 & 0 & 0 & 0\\
+1 & 1 & 1 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.280105$\\ 
+$2: 0.954813$\\ 
+$3: 0.954813$\\ 
+$4: 1.280105$\\ 
+$5: 1.238983$\\ 
+$6: 1.826942$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 26, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 0 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+1 & 0 & 0 & 0 & 0 & 1\\
+0 & 1 & 1 & 0 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.293805$\\ 
+$2: 0.942502$\\ 
+$3: 0.942502$\\ 
+$4: 1.293805$\\ 
+$5: 1.595298$\\ 
+$6: 2.145462$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 27, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 0 & 0 & 0 & 1 & 1\\
+1 & 0 & 0 & 1 & 0 & 0\\
+1 & 1 & 1 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.547578$\\ 
+$2: 0.636895$\\ 
+$3: 0.636895$\\ 
+$4: 1.547578$\\ 
+$5: 1.214245$\\ 
+$6: 1.880911$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 28, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 0 & 0 & 0 & 1 & 1\\
+1 & 0 & 0 & 1 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.473387$\\ 
+$2: 0.604601$\\ 
+$3: 0.604601$\\ 
+$4: 1.473387$\\ 
+$5: 1.473387$\\ 
+$6: 2.082181$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 29, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 0\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 0 & 0 & 0 & 0 & 1\\
+1 & 1 & 0 & 0 & 0 & 0\\
+0 & 1 & 1 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.298179$\\ 
+$2: 1.227032$\\ 
+$3: 0.758634$\\ 
+$4: 1.227032$\\ 
+$5: 1.298179$\\ 
+$6: 1.656827$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 30, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 0\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 0 & 0 & 0 & 0 & 0\\
+1 & 1 & 0 & 0 & 0 & 1\\
+1 & 0 & 1 & 0 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.601534$\\ 
+$2: 0.831987$\\ 
+$3: 0.831987$\\ 
+$4: 0.831987$\\ 
+$5: 1.601534$\\ 
+$6: 1.601534$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 31, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 0 & 0 & 0 & 0 & 0\\
+1 & 1 & 0 & 0 & 0 & 0\\
+1 & 1 & 1 & 0 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.560220$\\ 
+$2: 1.172536$\\ 
+$3: 0.871119$\\ 
+$4: 0.871119$\\ 
+$5: 1.172536$\\ 
+$6: 1.560220$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 32, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 0 & 0 & 0 & 0 & 0\\
+1 & 1 & 0 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.541749$\\ 
+$2: 1.129152$\\ 
+$3: 0.739274$\\ 
+$4: 0.877674$\\ 
+$5: 1.516490$\\ 
+$6: 1.861157$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 33, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 0 & 0 & 0 & 0 & 1\\
+1 & 1 & 0 & 0 & 0 & 0\\
+1 & 1 & 1 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.495010$\\ 
+$2: 1.128628$\\ 
+$3: 0.776615$\\ 
+$4: 1.215584$\\ 
+$5: 1.201216$\\ 
+$6: 1.847023$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 34, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 0 & 0 & 0 & 0 & 1\\
+1 & 1 & 0 & 0 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.454170$\\ 
+$2: 1.143524$\\ 
+$3: 0.696311$\\ 
+$4: 1.143524$\\ 
+$5: 1.454170$\\ 
+$6: 2.088932$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 35, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 0\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 0 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 1 & 0 & 1\\
+1 & 0 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.439176$\\ 
+$2: 0.771541$\\ 
+$3: 0.771541$\\ 
+$4: 1.439176$\\ 
+$5: 1.798700$\\ 
+$6: 1.798700$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 36, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 0 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 1 & 0 & 0\\
+1 & 1 & 1 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.461412$\\ 
+$2: 0.985646$\\ 
+$3: 0.850757$\\ 
+$4: 1.461412$\\ 
+$5: 1.422971$\\ 
+$6: 1.755024$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 37, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 0 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 1 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.406879$\\ 
+$2: 1.004477$\\ 
+$3: 0.736227$\\ 
+$4: 1.406879$\\ 
+$5: 1.721674$\\ 
+$6: 2.013076$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 38, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 0\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+1 & 0 & 0 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 0 & 0\\
+0 & 1 & 1 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.281451$\\ 
+$2: 0.945935$\\ 
+$3: 0.945935$\\ 
+$4: 1.281451$\\ 
+$5: 1.554896$\\ 
+$6: 1.554896$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 39, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 0\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+1 & 0 & 0 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 0 & 1\\
+0 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.092948$\\ 
+$2: 0.934074$\\ 
+$3: 0.934074$\\ 
+$4: 1.092948$\\ 
+$5: 1.682253$\\ 
+$6: 1.682253$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 40, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 0\\
+1 & 0 & 0 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 0 & 1\\
+1 & 1 & 0 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.455954$\\ 
+$2: 1.065512$\\ 
+$3: 0.758589$\\ 
+$4: 1.202363$\\ 
+$5: 1.819678$\\ 
+$6: 1.816208$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 41, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+1 & 0 & 0 & 0 & 0 & 0\\
+1 & 1 & 1 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.495510$\\ 
+$2: 0.884858$\\ 
+$3: 0.884858$\\ 
+$4: 0.907245$\\ 
+$5: 1.782919$\\ 
+$6: 1.782919$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 42, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+1 & 0 & 0 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 0 & 0\\
+1 & 1 & 1 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.349666$\\ 
+$2: 0.855223$\\ 
+$3: 0.855223$\\ 
+$4: 1.281832$\\ 
+$5: 1.334231$\\ 
+$6: 1.623087$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 43, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+1 & 0 & 0 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.410123$\\ 
+$2: 0.876171$\\ 
+$3: 0.876171$\\ 
+$4: 1.196221$\\ 
+$5: 1.719326$\\ 
+$6: 2.028529$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 44, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+1 & 0 & 0 & 0 & 1 & 1\\
+1 & 1 & 1 & 1 & 0 & 0\\
+1 & 1 & 1 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.423999$\\ 
+$2: 0.808375$\\ 
+$3: 0.808375$\\ 
+$4: 1.423999$\\ 
+$5: 1.393824$\\ 
+$6: 1.393824$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 45, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+1 & 0 & 0 & 0 & 1 & 1\\
+1 & 1 & 1 & 1 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.381083$\\ 
+$2: 0.820122$\\ 
+$3: 0.820122$\\ 
+$4: 1.381083$\\ 
+$5: 1.940131$\\ 
+$6: 1.940131$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 46, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 0\\
+0 & 0 & 0 & 1 & 0 & 1\\
+0 & 0 & 0 & 0 & 1 & 0\\
+1 & 1 & 0 & 0 & 0 & 1\\
+1 & 0 & 1 & 0 & 0 & 1\\
+0 & 1 & 0 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.062692$\\ 
+$2: 1.267223$\\ 
+$3: 0.836314$\\ 
+$4: 1.541568$\\ 
+$5: 1.582752$\\ 
+$6: 1.475653$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 47, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 0\\
+0 & 0 & 0 & 1 & 0 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 0 & 0 & 0\\
+1 & 0 & 1 & 0 & 0 & 0\\
+0 & 1 & 1 & 0 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.333333$\\ 
+$2: 1.333333$\\ 
+$3: 1.333333$\\ 
+$4: 1.333333$\\ 
+$5: 1.333333$\\ 
+$6: 1.333333$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 48, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 0\\
+0 & 0 & 0 & 1 & 0 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 0 & 0 & 1\\
+1 & 0 & 1 & 0 & 0 & 0\\
+0 & 1 & 1 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.275496$\\ 
+$2: 1.270130$\\ 
+$3: 1.275496$\\ 
+$4: 1.614805$\\ 
+$5: 1.339032$\\ 
+$6: 1.614805$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 49, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 0\\
+0 & 0 & 0 & 1 & 0 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 0 & 0 & 1\\
+1 & 0 & 1 & 0 & 0 & 1\\
+0 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.153759$\\ 
+$2: 1.274705$\\ 
+$3: 1.274705$\\ 
+$4: 1.569324$\\ 
+$5: 1.569324$\\ 
+$6: 1.844029$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 50, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 0 & 0\\
+0 & 0 & 0 & 0 & 1 & 0\\
+1 & 1 & 0 & 0 & 0 & 1\\
+1 & 0 & 1 & 0 & 0 & 1\\
+1 & 0 & 0 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.515930$\\ 
+$2: 0.800133$\\ 
+$3: 0.800133$\\ 
+$4: 1.587148$\\ 
+$5: 1.587148$\\ 
+$6: 1.515930$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 51, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 0 & 0\\
+0 & 0 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 0 & 0 & 1\\
+1 & 0 & 1 & 0 & 0 & 0\\
+1 & 0 & 1 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.348875$\\ 
+$2: 0.674437$\\ 
+$3: 1.053170$\\ 
+$4: 1.644580$\\ 
+$5: 1.053170$\\ 
+$6: 1.348875$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 52, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 0 & 1\\
+0 & 0 & 0 & 0 & 1 & 0\\
+1 & 1 & 0 & 0 & 0 & 1\\
+1 & 0 & 1 & 0 & 0 & 1\\
+1 & 1 & 0 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.323751$\\ 
+$2: 1.061568$\\ 
+$3: 0.753672$\\ 
+$4: 1.505617$\\ 
+$5: 1.587662$\\ 
+$6: 1.813513$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 53, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 0 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 0 & 0 & 0\\
+1 & 0 & 1 & 0 & 0 & 0\\
+1 & 1 & 1 & 0 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.414214$\\ 
+$2: 1.207107$\\ 
+$3: 1.207107$\\ 
+$4: 1.207107$\\ 
+$5: 1.207107$\\ 
+$6: 1.414214$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 54, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 0 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 0 & 0 & 1\\
+1 & 0 & 1 & 0 & 0 & 0\\
+1 & 1 & 1 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.350437$\\ 
+$2: 1.160944$\\ 
+$3: 1.110721$\\ 
+$4: 1.562535$\\ 
+$5: 1.232333$\\ 
+$6: 1.765724$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 55, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 0 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 0 & 0 & 1\\
+1 & 0 & 1 & 0 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.263122$\\ 
+$2: 1.131561$\\ 
+$3: 1.131561$\\ 
+$4: 1.536005$\\ 
+$5: 1.536005$\\ 
+$6: 2.072010$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 56, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 0\\
+0 & 0 & 0 & 1 & 0 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 0 & 1 & 1\\
+1 & 0 & 1 & 1 & 0 & 1\\
+0 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.192570$\\ 
+$2: 1.192570$\\ 
+$3: 1.192570$\\ 
+$4: 1.788854$\\ 
+$5: 1.788854$\\ 
+$6: 1.788854$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 57, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 0 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 0 & 1 & 1\\
+1 & 0 & 1 & 1 & 0 & 0\\
+1 & 1 & 1 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.346400$\\ 
+$2: 1.170430$\\ 
+$3: 1.017210$\\ 
+$4: 1.746763$\\ 
+$5: 1.420819$\\ 
+$6: 1.652888$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 58, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 0 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 0 & 1 & 1\\
+1 & 0 & 1 & 1 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.268675$\\ 
+$2: 1.059825$\\ 
+$3: 1.059825$\\ 
+$4: 1.697955$\\ 
+$5: 1.697955$\\ 
+$6: 1.954897$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 59, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 1 & 0 & 0 & 0 & 0\\
+1 & 1 & 0 & 0 & 0 & 0\\
+1 & 1 & 1 & 0 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.206045$\\ 
+$2: 1.206045$\\ 
+$3: 0.904534$\\ 
+$4: 0.904534$\\ 
+$5: 0.904534$\\ 
+$6: 1.507557$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 60, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 1 & 0 & 0 & 0 & 1\\
+1 & 1 & 0 & 0 & 0 & 0\\
+1 & 1 & 1 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.185101$\\ 
+$2: 1.185101$\\ 
+$3: 0.711780$\\ 
+$4: 1.327990$\\ 
+$5: 0.986309$\\ 
+$6: 1.821144$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 61, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 1 & 0 & 0 & 0 & 1\\
+1 & 1 & 0 & 0 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.150480$\\ 
+$2: 1.150480$\\ 
+$3: 0.721409$\\ 
+$4: 1.150480$\\ 
+$5: 1.150480$\\ 
+$6: 2.039332$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 62, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 0\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 1 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 1 & 0 & 1\\
+1 & 0 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.273065$\\ 
+$2: 1.003140$\\ 
+$3: 0.729348$\\ 
+$4: 1.735309$\\ 
+$5: 1.735309$\\ 
+$6: 1.776568$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 63, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 1 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 1 & 0 & 0\\
+1 & 1 & 1 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.156495$\\ 
+$2: 1.156495$\\ 
+$3: 0.855484$\\ 
+$4: 1.769457$\\ 
+$5: 1.389087$\\ 
+$6: 1.731974$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 64, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 1 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 1 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.119892$\\ 
+$2: 1.119892$\\ 
+$3: 0.777451$\\ 
+$4: 1.666043$\\ 
+$5: 1.666043$\\ 
+$6: 1.953085$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 65, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 0\\
+1 & 1 & 0 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 0 & 0\\
+1 & 1 & 0 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.177775$\\ 
+$2: 1.177775$\\ 
+$3: 0.886460$\\ 
+$4: 1.511762$\\ 
+$5: 1.524679$\\ 
+$6: 1.511762$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 66, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 0 & 0 & 0\\
+1 & 1 & 1 & 0 & 0 & 0\\
+1 & 1 & 1 & 0 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.154701$\\ 
+$2: 1.154701$\\ 
+$3: 1.154701$\\ 
+$4: 1.154701$\\ 
+$5: 1.154701$\\ 
+$6: 1.154701$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 67, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 0 & 0 & 0\\
+1 & 1 & 1 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.143145$\\ 
+$2: 1.143145$\\ 
+$3: 1.120124$\\ 
+$4: 1.166165$\\ 
+$5: 1.737119$\\ 
+$6: 1.737119$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 68, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 0 & 0\\
+1 & 1 & 1 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.103041$\\ 
+$2: 1.103041$\\ 
+$3: 1.008402$\\ 
+$4: 1.518009$\\ 
+$5: 1.270094$\\ 
+$6: 1.585694$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 69, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.106105$\\ 
+$2: 1.106105$\\ 
+$3: 1.112231$\\ 
+$4: 1.414200$\\ 
+$5: 1.630635$\\ 
+$6: 1.997732$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 70, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 0 & 1 & 1\\
+1 & 1 & 1 & 1 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.079347$\\ 
+$2: 1.079347$\\ 
+$3: 1.012629$\\ 
+$4: 1.635904$\\ 
+$5: 1.888789$\\ 
+$6: 1.888789$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 71, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 0\\
+1 & 1 & 1 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 0 & 1\\
+1 & 1 & 0 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.110482$\\ 
+$2: 1.110482$\\ 
+$3: 0.957497$\\ 
+$4: 1.364401$\\ 
+$5: 1.364401$\\ 
+$6: 1.713123$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 72, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+1 & 1 & 1 & 0 & 0 & 0\\
+1 & 1 & 1 & 0 & 0 & 0\\
+1 & 1 & 1 & 0 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.000000$\\ 
+$2: 1.000000$\\ 
+$3: 1.000000$\\ 
+$4: 1.000000$\\ 
+$5: 1.000000$\\ 
+$6: 1.000000$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 73, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+1 & 1 & 1 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 0 & 0\\
+1 & 1 & 1 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 0.984544$\\ 
+$2: 0.984544$\\ 
+$3: 0.984544$\\ 
+$4: 1.641091$\\ 
+$5: 1.199669$\\ 
+$6: 1.641091$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 74, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+1 & 1 & 1 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 0.969596$\\ 
+$2: 0.969596$\\ 
+$3: 0.969596$\\ 
+$4: 1.335045$\\ 
+$5: 1.335045$\\ 
+$6: 1.953994$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 75, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+1 & 1 & 1 & 0 & 1 & 1\\
+1 & 1 & 1 & 1 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 0.948683$\\ 
+$2: 0.948683$\\ 
+$3: 0.948683$\\ 
+$4: 1.826168$\\ 
+$5: 1.826168$\\ 
+$6: 1.826168$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 76, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 0 & 1 & 1\\
+0 & 0 & 0 & 1 & 0 & 1\\
+1 & 0 & 0 & 0 & 1 & 0\\
+0 & 1 & 0 & 0 & 0 & 1\\
+1 & 0 & 1 & 0 & 0 & 0\\
+1 & 1 & 0 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.573132$\\ 
+$2: 1.286566$\\ 
+$3: 1.286566$\\ 
+$4: 1.286566$\\ 
+$5: 1.286566$\\ 
+$6: 1.573132$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 77, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 0 & 1 & 1\\
+0 & 0 & 0 & 1 & 0 & 1\\
+1 & 0 & 0 & 0 & 1 & 1\\
+0 & 1 & 0 & 0 & 0 & 0\\
+1 & 0 & 1 & 0 & 0 & 0\\
+1 & 1 & 1 & 0 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.571340$\\ 
+$2: 1.351060$\\ 
+$3: 1.571340$\\ 
+$4: 0.795287$\\ 
+$5: 1.063556$\\ 
+$6: 1.379814$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 78, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 0 & 1 & 1\\
+0 & 0 & 0 & 1 & 0 & 1\\
+1 & 0 & 0 & 0 & 1 & 1\\
+0 & 1 & 0 & 0 & 0 & 0\\
+1 & 0 & 1 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.484493$\\ 
+$2: 1.316493$\\ 
+$3: 1.484493$\\ 
+$4: 0.901076$\\ 
+$5: 1.484493$\\ 
+$6: 1.755733$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 79, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 0 & 1 & 1\\
+0 & 0 & 0 & 1 & 0 & 1\\
+1 & 0 & 0 & 0 & 1 & 1\\
+0 & 1 & 0 & 0 & 0 & 1\\
+1 & 0 & 1 & 0 & 0 & 0\\
+1 & 1 & 1 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.559513$\\ 
+$2: 1.292582$\\ 
+$3: 1.559513$\\ 
+$4: 1.292582$\\ 
+$5: 1.166852$\\ 
+$6: 1.827313$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 80, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 0 & 1 & 1\\
+0 & 0 & 0 & 1 & 0 & 1\\
+1 & 0 & 0 & 0 & 1 & 1\\
+0 & 1 & 0 & 0 & 0 & 1\\
+1 & 0 & 1 & 0 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.495078$\\ 
+$2: 1.309979$\\ 
+$3: 1.495078$\\ 
+$4: 1.309979$\\ 
+$5: 1.495078$\\ 
+$6: 2.098166$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 81, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 0 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 0\\
+1 & 0 & 0 & 0 & 1 & 1\\
+0 & 1 & 0 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 0 & 1\\
+1 & 0 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.494427$\\ 
+$2: 1.123607$\\ 
+$3: 1.494427$\\ 
+$4: 1.123607$\\ 
+$5: 1.618034$\\ 
+$6: 1.618034$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 82, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 0 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+1 & 0 & 0 & 0 & 1 & 0\\
+0 & 1 & 0 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 0 & 0\\
+1 & 1 & 0 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.430904$\\ 
+$2: 1.430904$\\ 
+$3: 1.284457$\\ 
+$4: 1.284457$\\ 
+$5: 1.430904$\\ 
+$6: 1.430904$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 83, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 0 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+1 & 0 & 0 & 0 & 1 & 0\\
+0 & 1 & 0 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 0 & 1\\
+1 & 1 & 0 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.485493$\\ 
+$2: 1.485493$\\ 
+$3: 1.197192$\\ 
+$4: 1.197192$\\ 
+$5: 1.746238$\\ 
+$6: 1.746238$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 84, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 0 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+1 & 0 & 0 & 0 & 1 & 1\\
+0 & 1 & 0 & 0 & 0 & 0\\
+1 & 1 & 1 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.438393$\\ 
+$2: 1.534851$\\ 
+$3: 1.438393$\\ 
+$4: 0.865330$\\ 
+$5: 1.715372$\\ 
+$6: 1.715372$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 85, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 0 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+1 & 0 & 0 & 0 & 1 & 1\\
+0 & 1 & 0 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 0 & 0\\
+1 & 1 & 1 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.504526$\\ 
+$2: 1.433787$\\ 
+$3: 1.504526$\\ 
+$4: 1.305248$\\ 
+$5: 1.282834$\\ 
+$6: 1.673523$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 86, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 0 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+1 & 0 & 0 & 0 & 1 & 1\\
+0 & 1 & 0 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.462863$\\ 
+$2: 1.466083$\\ 
+$3: 1.462863$\\ 
+$4: 1.207386$\\ 
+$5: 1.633758$\\ 
+$6: 2.001380$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 87, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 0 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+1 & 0 & 0 & 0 & 1 & 1\\
+0 & 1 & 0 & 0 & 1 & 1\\
+1 & 1 & 1 & 1 & 0 & 0\\
+1 & 1 & 1 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.489830$\\ 
+$2: 1.489830$\\ 
+$3: 1.489830$\\ 
+$4: 1.489830$\\ 
+$5: 1.392621$\\ 
+$6: 1.392621$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 88, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 0 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+1 & 0 & 0 & 0 & 1 & 1\\
+0 & 1 & 0 & 0 & 1 & 1\\
+1 & 1 & 1 & 1 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.457107$\\ 
+$2: 1.457107$\\ 
+$3: 1.457107$\\ 
+$4: 1.457107$\\ 
+$5: 1.914214$\\ 
+$6: 1.914214$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 89, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 0 & 0 & 1 & 1 & 1\\
+1 & 0 & 1 & 0 & 1 & 1\\
+1 & 0 & 1 & 1 & 0 & 0\\
+1 & 1 & 1 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.660799$\\ 
+$2: 0.862095$\\ 
+$3: 1.660799$\\ 
+$4: 1.660799$\\ 
+$5: 1.340253$\\ 
+$6: 1.702750$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 90, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 1\\
+1 & 0 & 0 & 1 & 1 & 1\\
+1 & 0 & 1 & 0 & 1 & 1\\
+1 & 0 & 1 & 1 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.592155$\\ 
+$2: 0.805017$\\ 
+$3: 1.592155$\\ 
+$4: 1.592155$\\ 
+$5: 1.592155$\\ 
+$6: 1.894504$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 91, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+1 & 0 & 0 & 1 & 1 & 1\\
+1 & 0 & 1 & 0 & 0 & 0\\
+1 & 1 & 1 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.704907$\\ 
+$2: 1.151738$\\ 
+$3: 1.704907$\\ 
+$4: 1.151738$\\ 
+$5: 1.704907$\\ 
+$6: 1.704907$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 92, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+1 & 0 & 0 & 1 & 1 & 1\\
+1 & 0 & 1 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 0 & 0\\
+1 & 1 & 1 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.663248$\\ 
+$2: 1.084317$\\ 
+$3: 1.663248$\\ 
+$4: 1.454289$\\ 
+$5: 1.333345$\\ 
+$6: 1.558184$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 93, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+1 & 0 & 0 & 1 & 1 & 1\\
+1 & 0 & 1 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.626098$\\ 
+$2: 1.160818$\\ 
+$3: 1.626098$\\ 
+$4: 1.346254$\\ 
+$5: 1.609801$\\ 
+$6: 1.907152$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 94, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 1 & 1\\
+1 & 0 & 0 & 1 & 1 & 1\\
+1 & 0 & 1 & 0 & 1 & 1\\
+1 & 1 & 1 & 1 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.572264$\\ 
+$2: 1.099433$\\ 
+$3: 1.572264$\\ 
+$4: 1.572264$\\ 
+$5: 1.838455$\\ 
+$6: 1.838455$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 95, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 1 & 0 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+1 & 0 & 0 & 0 & 1 & 0\\
+1 & 1 & 0 & 0 & 0 & 1\\
+0 & 1 & 1 & 0 & 0 & 0\\
+1 & 1 & 0 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.538303$\\ 
+$2: 1.538303$\\ 
+$3: 1.310860$\\ 
+$4: 1.560159$\\ 
+$5: 1.310860$\\ 
+$6: 1.560159$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 96, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 1 & 0 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+1 & 0 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 0 & 0 & 0\\
+0 & 1 & 1 & 0 & 0 & 0\\
+1 & 1 & 1 & 0 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.527907$\\ 
+$2: 1.466639$\\ 
+$3: 1.527907$\\ 
+$4: 1.145308$\\ 
+$5: 1.145308$\\ 
+$6: 1.325737$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 97, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 1 & 0 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+1 & 0 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 0 & 0 & 1\\
+0 & 1 & 1 & 0 & 0 & 0\\
+1 & 1 & 1 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.502675$\\ 
+$2: 1.487762$\\ 
+$3: 1.487762$\\ 
+$4: 1.502675$\\ 
+$5: 1.218887$\\ 
+$6: 1.757919$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 98, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 1 & 0 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+1 & 0 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 0 & 0 & 1\\
+0 & 1 & 1 & 0 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.465975$\\ 
+$2: 1.465975$\\ 
+$3: 1.465975$\\ 
+$4: 1.465975$\\ 
+$5: 1.465975$\\ 
+$6: 2.041241$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 99, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 1 & 1 & 0\\
+0 & 0 & 0 & 1 & 1 & 1\\
+1 & 0 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 0 & 0\\
+0 & 1 & 1 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.333333$\\ 
+$2: 1.333333$\\ 
+$3: 1.333333$\\ 
+$4: 1.333333$\\ 
+$5: 1.333333$\\ 
+$6: 1.333333$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 100, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+1 & 0 & 0 & 0 & 1 & 0\\
+1 & 1 & 0 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 0 & 1\\
+1 & 1 & 0 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.591523$\\ 
+$2: 1.307353$\\ 
+$3: 1.238983$\\ 
+$4: 1.307353$\\ 
+$5: 1.591523$\\ 
+$6: 1.724639$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 101, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+1 & 0 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 0 & 0\\
+1 & 1 & 1 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.636985$\\ 
+$2: 1.290703$\\ 
+$3: 1.450023$\\ 
+$4: 1.450023$\\ 
+$5: 1.290703$\\ 
+$6: 1.636985$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 102, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+1 & 0 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.514005$\\ 
+$2: 1.282261$\\ 
+$3: 1.436020$\\ 
+$4: 1.282261$\\ 
+$5: 1.514005$\\ 
+$6: 1.950025$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 103, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+1 & 0 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 0 & 1 & 1\\
+1 & 1 & 1 & 1 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.550014$\\ 
+$2: 1.340189$\\ 
+$3: 1.340189$\\ 
+$4: 1.550014$\\ 
+$5: 1.846857$\\ 
+$6: 1.846857$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 104, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+1 & 0 & 0 & 1 & 1 & 1\\
+1 & 1 & 1 & 0 & 1 & 1\\
+1 & 1 & 1 & 1 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.512639$\\ 
+$2: 1.238719$\\ 
+$3: 1.512639$\\ 
+$4: 1.781029$\\ 
+$5: 1.781029$\\ 
+$6: 1.781029$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 105, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 1 & 1 & 1\\
+0 & 0 & 1 & 1 & 1 & 0\\
+1 & 1 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 0 & 1\\
+1 & 0 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.603553$\\ 
+$2: 1.207107$\\ 
+$3: 1.603553$\\ 
+$4: 1.207107$\\ 
+$5: 1.603553$\\ 
+$6: 1.603553$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (3);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 106, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 1 & 1 & 1\\
+0 & 0 & 1 & 1 & 1 & 1\\
+1 & 1 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 0 & 0 & 0\\
+1 & 1 & 1 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.331034$\\ 
+$2: 1.331034$\\ 
+$3: 1.624052$\\ 
+$4: 1.024680$\\ 
+$5: 1.624052$\\ 
+$6: 1.624052$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (3);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 107, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 1 & 1 & 1\\
+0 & 0 & 1 & 1 & 1 & 1\\
+1 & 1 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 0 & 0\\
+1 & 1 & 1 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.351322$\\ 
+$2: 1.351322$\\ 
+$3: 1.628374$\\ 
+$4: 1.351922$\\ 
+$5: 1.351922$\\ 
+$6: 1.628374$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (3);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 108, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 1 & 1 & 1\\
+0 & 0 & 1 & 1 & 1 & 1\\
+1 & 1 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.311173$\\ 
+$2: 1.311173$\\ 
+$3: 1.557305$\\ 
+$4: 1.235854$\\ 
+$5: 1.557305$\\ 
+$6: 1.886004$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (3);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 109, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 1 & 1 & 1\\
+0 & 0 & 1 & 1 & 1 & 1\\
+1 & 1 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 0 & 1 & 1\\
+1 & 1 & 1 & 1 & 0 & 0\\
+1 & 1 & 1 & 1 & 0 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.333333$\\ 
+$2: 1.333333$\\ 
+$3: 1.333333$\\ 
+$4: 1.333333$\\ 
+$5: 1.333333$\\ 
+$6: 1.333333$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (3);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 110, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 1 & 1 & 1\\
+0 & 0 & 1 & 1 & 1 & 1\\
+1 & 1 & 0 & 0 & 1 & 1\\
+1 & 1 & 0 & 0 & 1 & 1\\
+1 & 1 & 1 & 1 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.283349$\\ 
+$2: 1.283349$\\ 
+$3: 1.283349$\\ 
+$4: 1.283349$\\ 
+$5: 1.805582$\\ 
+$6: 1.805582$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (3);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 111, order 6.\\\\
+$\begin{pmatrix}
+0 & 0 & 1 & 1 & 1 & 1\\
+0 & 0 & 1 & 1 & 1 & 1\\
+1 & 1 & 0 & 1 & 1 & 1\\
+1 & 1 & 1 & 0 & 1 & 1\\
+1 & 1 & 1 & 1 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.249390$\\ 
+$2: 1.249390$\\ 
+$3: 1.726086$\\ 
+$4: 1.726086$\\ 
+$5: 1.726086$\\ 
+$6: 1.726086$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (3);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+\vbox{
+Graph 112, order 6.\\\\
+$\begin{pmatrix}
+0 & 1 & 1 & 1 & 1 & 1\\
+1 & 0 & 1 & 1 & 1 & 1\\
+1 & 1 & 0 & 1 & 1 & 1\\
+1 & 1 & 1 & 0 & 1 & 1\\
+1 & 1 & 1 & 1 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 0\\
+\end{pmatrix}\\$
+energies:\\ 
+$1: 1.666667$\\ 
+$2: 1.666667$\\ 
+$3: 1.666667$\\ 
+$4: 1.666667$\\ 
+$5: 1.666667$\\ 
+$6: 1.666667$\\ 
+\begin{tikzpicture}[main_node/.style={circle,fill=blue!20,draw,minimum size=1em,inner sep=3pt]}]
+\node[main_node] (1) at (1*360/6:1) {$1$};
+\node[main_node] (2) at (2*360/6:1) {$2$};
+\node[main_node] (3) at (3*360/6:1) {$3$};
+\node[main_node] (4) at (4*360/6:1) {$4$};
+\node[main_node] (5) at (5*360/6:1) {$5$};
+\node[main_node] (6) at (6*360/6:1) {$6$};
+\path[draw,thick](1) edge node {} (2);
+\path[draw,thick](1) edge node {} (3);
+\path[draw,thick](1) edge node {} (4);
+\path[draw,thick](1) edge node {} (5);
+\path[draw,thick](1) edge node {} (6);
+\path[draw,thick](2) edge node {} (3);
+\path[draw,thick](2) edge node {} (4);
+\path[draw,thick](2) edge node {} (5);
+\path[draw,thick](2) edge node {} (6);
+\path[draw,thick](3) edge node {} (4);
+\path[draw,thick](3) edge node {} (5);
+\path[draw,thick](3) edge node {} (6);
+\path[draw,thick](4) edge node {} (5);
+\path[draw,thick](4) edge node {} (6);
+\path[draw,thick](5) edge node {} (6);
+\end{tikzpicture}
+}
+
+
+
+
+\end{multicols}
+\end{document}
